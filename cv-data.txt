@@ -1,0 +1,107 @@
+# Mohammad Nabil Hanif - CV Data
+# This file contains personal CV information for portfolio enhancement
+# Only you and I have access to this information
+
+## Personal Information
+[Add your personal details here]
+
+## Education
+[Add your educational background here]
+
+## Work Experience
+[Add your work experience here]
+
+## Skills & Certifications
+[Add your skills and certifications here]
+
+## Achievements & Awards
+[Add your achievements and awards here]
+
+## Projects (Additional Details)
+[Add more detailed project information here]
+
+## Languages
+[Add languages you speak here]
+
+## Interests & Hobbies
+[Add your interests and hobbies here]
+
+---
+Note: Fill in the sections above with your actual CV information.
+This data will be used to enhance your portfolio with more comprehensive sections.
+
+
+MOHAMMAD NABIL HANIF
++6282246202003 | nabilhanif39@gmail.com | www.linkedin.com/in/mohammad-nabil-hanif-469b97303
+Tangerang Selatan
+A 6th-semester Information Technology student at President University with strong interests in cybersecurity, system analysis, and web
+development. Deeply invested in understanding system functionality, particularly in identifying risks and enhancing security. Enjoys the
+creative side of front-end design and consistently builds technical skills through hands-on projects. Able to work both independently and
+collaboratively with a growth mindset and strong problem-solving approach.
+Work Experiences
+Website Tester — President University CTF Cybersecurity Event Jan 2025 - Feb 2025
+Tested a cybersecurity-focused CTF website for usability and vulnerabilities
+Identified bugs impacting usability and navigation flow
+Assessed responsiveness to ensure compatibility and smooth usage
+Simulated real-user interactions to test platform reliability
+Delivered feedback for improving site security and performance
+Game Tester (Quality Assistance) - Independent Dec 2024 - Feb 2025
+Tested game performance and identified bugs in "Do You Copy?" and "The Leeds Murder."
+Assessed gameplay performance across specific hardware setups.
+Reported and documented over 20 bugs across two game titles.
+Conducted functional tests to verify mechanics and story flow.
+Provided structured feedback to improve gameplay and stability.
+UI/UX Designer – Project-Based Internship May 2025 - Jun 2025
+Nuri (via Rakamin Academy)
+Completed a 4-week internship at Nuri, a joint venture e-commerce company under Smartfren and Whale Cloud Technology (Alibaba
+Group partner).
+Applied UI/UX design principles through tasks including persona creation, user flow, wireframing, and prototyping.
+Conducted UX research and data analysis using Google Analytics to support design decisions.
+Delivered a final project consisting of design thinking documentation, a functional wireframe, and a high-fidelity prototype.
+Education Level
+Universitas Presiden - Jababeka Education Park, Jl. Ki Hajar Dewantara, RT.2/RW.4,
+Mekarmukti, Cikarang Utara, Bekasi Regency, West Java 17530
+Sep 2023 - Dec 2026 (Expected)
+Bachelor of Informatics, 3.80/4.00
+Jababeka Scholarship Rank 2 Awardee | Partial scholarship awarded based on outstanding high school academic performance.
+Korea-ASEAN Digital Academy (KADA) Bootcamp - Bekasi Regency, West Java,
+Indonesia
+Jun 2025 - Aug 2025 (Expected)
+Currently enrolled in a 10-week intensive program powered by the ASEAN-Korea Cooperation Fund and the Ministry of Communication
+and Digital Affairs of Indonesia(KOMINDIGI).
+Organisational Experience
+President University Nippon Community (PUNICO) - Vice Head – Seiyuu Circle Oct 2024 - Present
+A cultural student organization at President University focused on promoting Japanese culture, language, and creative arts through
+community events and interest-based circles
+Planned and led weekly Seiyuu Circle sessions focused on voice acting practice through interactive games and activities. Facilitated
+voice-over exercises, collaborative discussions, and performance challenges to enhance vocal expression and character delivery,
+engaging 25–30 active members.
+Skills, Achievements & Other Experience
+Soft Skills: Analytical Thinking, Team Collaboration, Leadership, Adaptability.
+Hard Skills: HTML, CSS, ReactJS | Backend: Java, PHP, MySQL, Firebase | Database/Query: SQL | Cybersecurity Tools: Wireshark,
+Network Miner, VirusTotal | Mobile/Android: Android Studio, SensorManager | Tools: Git, GitHub, GitLab, Linux
+English Proficiency – Duolingo English Test (DET) – 110  (2023)
+Web Development Course – Udemy (Angela Yu)  (2023): Completed a 55-hour project-based full-stack web development course.
+Covered HTML, CSS, JavaScript, Node.js, React, MongoDB, and the MERN stack. Built real-world websites and apps including product
+pages, games, and developer tools.
+SQL Fundamentals Course – Decoding  (2023): Completed an 11-hour foundational SQL course aimed at aspiring data analysts and
+data scientists. Learned database fundamentals, DBMS concepts, data definition and manipulation (DDL & DML), and practiced queries
+such as SELECT, INSERT, UPDATE, and DELETE. Finished with a final exam evaluation.
+Digital Forensic Case Investigations and Incident Analysis (2025): Participated in a team-based digital forensic investigation,
+analyzing cases related to financial fraud, data leaks, and malware attacks. Tasks included file recovery, traffic analysis using PCAPs,
+steganography detection, and user activity tracing. Utilized tools such as Wireshark, Network Miner, and VirusTotal to collect digital
+evidence, reconstruct incident timelines, and support intent assessment.
+Food Ordering Website – Personal Full-Stack Project (PHP & MySQL) (2024): Food Ordering Website (2024) Built a PHP-MySQL
+web app with order tracking and product listings.
+Android WhatsApp Clone – Independent Project (2025): Built "Chatzing," a real-time chat app using Java, Firebase, and Android
+Studio. Integrated camera functionality, Bluetooth connectivity, and a compass tool with SensorManager. Strengthened skills in mobile
+development and hardware feature integration.
+Urban Night City – 3D Modeling & Animation Project (2024): Contributed to a 3D animation project using Blender, focusing on
+character modeling, animation, and storyline development. Collaborated in a 4-person team and was responsible for 30% of the total
+asset creation and animation, including character movement and environmental elements.
+Vice Project Manager - English Teaching & Environmental Awareness Social Project (BRIGHT) (2024): Karawang – Co-led English
+and civic awareness sessions for 30+ elementary students in a remote settlement near the industrial zone. Conducted interactive
+activities to build vocabulary, communication skills, and environmental responsibility.
+PIC of Marketing – Economic Survival Business Simulation (Bancimo) (2024): Led marketing for Bancimo, a snack business
+created during a campus-wide simulation. Handled branding, promotions, and customer engagement, contributing to increased product
+visibility and sales through both digital and on-site strategies.
