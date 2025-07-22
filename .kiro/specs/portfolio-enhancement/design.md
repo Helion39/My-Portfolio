@@ -137,7 +137,7 @@ interface FullScreenExperience {
 
 **Content Updates:**
 - Align project descriptions with actual CV data
-- Add missing projects (Android WhatsApp Clone, Urban Night City, BRIGHT, Bancimo)
+- Add missing projects (Free Risk Management (FRM) Platform, Urban Night City, BRIGHT, Bancimo)
 - Update technology stacks to match actual experience
 - Improve project categorization
 
@@ -218,7 +218,7 @@ All experience entries will be updated to match CV data exactly, including:
 Projects will include all major work from CV:
 - Digital Forensic Case Investigations
 - Food Ordering Website (PHP & MySQL)
-- Android WhatsApp Clone (Chatzing)
+- Free Risk Management (FRM) – Cybersecurity Risk Assessment Platform
 - Urban Night City (3D Modeling)
 - BRIGHT Social Project
 - Bancimo Business Simulation

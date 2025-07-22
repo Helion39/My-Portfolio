@@ -2,7 +2,7 @@ import { skills } from "@/data/skills";
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-20 px-6 md:px-12 bg-gray-50">
+    <section id="about" className="py-20 px-6 md:px-12" style={{backgroundColor: '#f8f9fa'}}>
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-6">About Me</h2>

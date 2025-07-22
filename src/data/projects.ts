@@ -6,7 +6,7 @@ export const projects: Project[] = [
     title: "Digital Forensic Case Investigations",
     category: "Cybersecurity & Analysis",
     description: "Team-based investigation analyzing financial fraud, data leaks, and malware attacks",
-    image: "/placeholder.svg",
+    image: "/projects/Cybersecurity Audit PT. Sequre Gate One1.png",
     overview: "Participated in comprehensive team-based digital forensic investigations analyzing complex cybersecurity incidents including financial fraud, data breaches, and malware attacks. Applied professional forensic methodologies to reconstruct incident timelines and identify attack vectors.",
     role: "As a forensic analyst team member, I conducted detailed technical analysis of digital evidence using industry-standard tools and methodologies. My contributions focused on network traffic analysis, file recovery operations, and user activity reconstruction to support incident response and legal proceedings.",
     technologies: ["Wireshark", "Network Miner", "PCAP Analysis", "File Recovery Tools", "Log Analysis", "Incident Response"],
@@ -36,20 +36,20 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: "chatzing",
-    title: "Chatzing - Android WhatsApp Clone",
-    category: "Android Development",
-    description: "Real-time chat app with camera, Bluetooth, and compass integration",
-    image: "/placeholder.svg",
-    overview: "Developed 'Chatzing,' a feature-rich Android messaging application that demonstrates advanced mobile development skills through real-time communication and hardware integration. The app showcases complex Android API usage and system-level programming.",
-    role: "As the lead Android developer, I engineered the complete mobile application from architecture design to hardware integration. My focus was on creating a robust messaging platform that leverages device capabilities to enhance user communication experiences beyond traditional text messaging.",
-    technologies: ["Java", "Android Studio", "Firebase", "SensorManager", "Camera API", "Bluetooth API", "Real-time Database"],
+    id: "frm-platform",
+    title: "Free Risk Management (FRM) - Cybersecurity Risk Assessment Platform",
+    category: "Cybersecurity",
+    description: "Interactive platform visualizing ISO/IEC 27005 risk assessment process",
+    image: "/projects/FRM1.png",
+    overview: "Created an interactive cybersecurity risk assessment platform that visualizes the comprehensive 9-step ISO/IEC 27005 risk assessment process. The platform helps users systematically evaluate the security of their software or hardware systems by understanding threats, vulnerabilities, and risk controls through an intuitive web interface.",
+    role: "As the lead developer and cybersecurity analyst, I designed and implemented the complete risk assessment framework from conceptual design to interactive visualization. My focus was on translating complex cybersecurity standards into an accessible, user-friendly platform that enables effective risk management decision-making.",
+    technologies: ["React", "TypeScript", "Tailwind CSS", "Interactive Visualization", "ISO/IEC 27005", "Risk Assessment Framework", "Cybersecurity Standards"],
     details: [
-      "Implemented real-time messaging using Firebase Realtime Database for instant message delivery",
-      "Integrated camera functionality using Android Camera API for in-app photo sharing",
-      "Developed Bluetooth connectivity features for device-to-device communication",
-      "Built compass tool using SensorManager for location-based features and navigation assistance",
-      "Designed intuitive chat interfaces with material design principles and smooth animations"
+      "Implemented interactive visualization of the 9-step ISO/IEC 27005 risk assessment methodology",
+      "Designed user-friendly interface for systematic evaluation of software and hardware security",
+      "Created comprehensive threat and vulnerability assessment tools with real-time analysis",
+      "Developed risk control recommendation system based on industry best practices",
+      "Built responsive web platform using modern React and TypeScript architecture"
     ]
   },
   {

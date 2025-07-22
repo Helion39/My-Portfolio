@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { FaLinkedin, FaGithub, FaWhatsapp, FaTelegram, FaInstagram } from "react-icons/fa";
+import emailjs from '@emailjs/browser';
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -28,7 +29,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-20 px-6 md:px-12 bg-white">
+    <section id="contact" className="py-20 px-6 md:px-12" style={{backgroundColor: '#f8f9fa'}}>
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-6">Let's Connect</h2>

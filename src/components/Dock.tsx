@@ -177,7 +177,7 @@ export default function Dock({
           isHovered.set(0);
           mouseX.set(Infinity);
         }}
-        className={`absolute bottom-2 left-1/2 transform -translate-x-1/2 flex items-end gap-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 px-2 pb-2 ${className}`}
+        className={`absolute bottom-2 left-1/2 transform -translate-x-1/2 flex items-end gap-3 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 px-2 pb-2 ${className}`}
         style={{ height: panelHeight }}
         role="toolbar"
         aria-label="Application dock"
@@ -194,7 +194,6 @@ export default function Dock({
             baseItemSize={baseItemSize}
           >
             <DockIcon>{item.icon}</DockIcon>
-            <DockLabel>{item.label}</DockLabel>
           </DockItem>
         ))}
       </motion.div>

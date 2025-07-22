@@ -47,7 +47,7 @@ This feature focuses on enhancing Mohammad Nabil Hanif's portfolio website to be
 
 1. WHEN I view the projects section THEN it SHALL include all major projects from his CV with accurate descriptions
 2. WHEN I click on a project THEN it SHALL show detailed technical information, technologies used, and his specific contributions
-3. WHEN I review his Android development work THEN it SHALL highlight the Chatzing app with Firebase integration and hardware features
+3. WHEN I review his cybersecurity development work THEN it SHALL highlight the Free Risk Management (FRM) platform with ISO/IEC 27005 risk assessment visualization
 4. WHEN I examine his web development projects THEN they SHALL demonstrate full-stack capabilities with PHP, MySQL, and modern frameworks
 
 ### Requirement 5

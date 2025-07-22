@@ -86,9 +86,9 @@ export const StickyScroll = ({
             className="h-full w-full"
           >
             {content[activeCard].content ?? null}
-          </motion.div>
+          </motion.div>w
         </AnimatePresence>
       </motion.div>
     </motion.div>
   );
-};
+};    

@@ -93,9 +93,7 @@ steganography detection, and user activity tracing. Utilized tools such as Wires
 evidence, reconstruct incident timelines, and support intent assessment.
 Food Ordering Website – Personal Full-Stack Project (PHP & MySQL) (2024): Food Ordering Website (2024) Built a PHP-MySQL
 web app with order tracking and product listings.
-Android WhatsApp Clone – Independent Project (2025): Built "Chatzing," a real-time chat app using Java, Firebase, and Android
-Studio. Integrated camera functionality, Bluetooth connectivity, and a compass tool with SensorManager. Strengthened skills in mobile
-development and hardware feature integration.
+Free Risk Management (FRM) – Cybersecurity Risk Assessment Platform (2025): Created an interactive interface that visualizes the 9-step ISO/IEC 27005 risk assessment process. Helps users evaluate the security of their software or hardware systems by understanding threats, vulnerabilities, and risk controls. Demonstrates expertise in cybersecurity frameworks and interactive web development.
 Urban Night City – 3D Modeling & Animation Project (2024): Contributed to a 3D animation project using Blender, focusing on
 character modeling, animation, and storyline development. Collaborated in a 4-person team and was responsible for 30% of the total
 asset creation and animation, including character movement and environmental elements.
