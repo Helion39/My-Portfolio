@@ -13,7 +13,7 @@ export default function CarouselDemo() {
       id: "food-ordering",
       title: "Food Ordering Website",
       description: "Full-stack web application built with PHP and MySQL, featuring user authentication and order management.",
-      src: "", // Placeholder - no image
+      src: "/projects/FRM2.png",
     },
     {
       id: "frm-platform",
@@ -37,7 +37,7 @@ export default function CarouselDemo() {
       id: "bancimo",
       title: "Bancimo - Business Simulation",
       description: "Interactive business simulation demonstrating marketing leadership and strategic decision-making.",
-      src: "", // Placeholder - no image
+      src: "/projects/FRM3.png",
     },
   ];
 

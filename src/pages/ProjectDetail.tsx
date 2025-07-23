@@ -125,7 +125,7 @@ const ProjectDetail = () => {
               asChild
               className="bg-gray-900 hover:bg-gray-800 text-white px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              <a href="mailto:nabilhanif39@gmail.com" className="flex items-center space-x-2">
+              <a href="mailto:mohammad.n.hanif@gmail.com" className="flex items-center space-x-2">
                 <span>Get In Touch</span>
                 <ExternalLink className="w-4 h-4" />
               </a>

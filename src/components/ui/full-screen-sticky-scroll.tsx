@@ -156,7 +156,7 @@ export const FullScreenStickyScroll = ({
         </div>
 
         {/* Right Column: Sticky Image Placeholder */}
-        <div className="col-span-4">
+        <div className="col-span-4 hidden">
           <div className="sticky top-0 flex h-screen items-center justify-end">
             <AnimatePresence mode="wait">
               <motion.div

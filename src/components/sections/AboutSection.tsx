@@ -13,24 +13,30 @@ const AboutSection = () => {
 
         <div className="grid md:grid-cols-2 gap-12 mb-16">
           <div>
-            <h3 className="text-xl font-medium text-gray-900 mb-6">My Approach</h3>
+            <h3 className="text-xl font-medium text-gray-900 mb-6">Core Skills</h3>
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-gray-400 rounded-full mt-2 flex-shrink-0"></div>
                 <p className="text-gray-600 leading-relaxed">
-                  User-focused design drives every interface decision, informed by real data and user research from my experience at Nuri.
+                  <strong className="text-gray-800">Analytical Thinking</strong> - Breaking down complex systems and identifying potential risks through systematic evaluation and forensic analysis.
                 </p>
               </div>
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-gray-400 rounded-full mt-2 flex-shrink-0"></div>
                 <p className="text-gray-600 leading-relaxed">
-                  Security-first engineering ensures robust systems through proactive vulnerability testing and forensic analysis.
+                  <strong className="text-gray-800">Team Collaboration</strong> - Working effectively in diverse teams, from 4-person 3D animation projects to cross-functional development initiatives.
                 </p>
               </div>
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-gray-400 rounded-full mt-2 flex-shrink-0"></div>
                 <p className="text-gray-600 leading-relaxed">
-                  Collaborative leadership builds stronger teams, demonstrated through community building at PUNICO and social impact work with BRIGHT.
+                  <strong className="text-gray-800">Leadership</strong> - Demonstrated through Vice Head role at PUNICO, managing 25-30 members, and leading social impact projects like BRIGHT.
+                </p>
+              </div>
+              <div className="flex items-start space-x-3">
+                <div className="w-2 h-2 bg-gray-400 rounded-full mt-2 flex-shrink-0"></div>
+                <p className="text-gray-600 leading-relaxed">
+                  <strong className="text-gray-800">Adaptability</strong> - Transitioning seamlessly between cybersecurity testing, UI/UX design, game testing, and full-stack development projects.
                 </p>
               </div>
             </div>

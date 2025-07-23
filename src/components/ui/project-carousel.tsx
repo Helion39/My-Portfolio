@@ -151,14 +151,28 @@ interface ProjectCarouselProps {
 
 export default function ProjectCarousel({ slides }: ProjectCarouselProps) {
   const [current, setCurrent] = useState(0);
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
   const navigate = useNavigate();
 
+  // Auto-play functionality
+  useEffect(() => {
+    if (!isAutoPlaying) return;
+    
+    const interval = setInterval(() => {
+      setCurrent(prev => (prev + 1) % slides.length);
+    }, 4000); // Change slide every 4 seconds
+
+    return () => clearInterval(interval);
+  }, [isAutoPlaying, slides.length]);
+
   const handlePreviousClick = () => {
+    setIsAutoPlaying(false); // Stop auto-play when user interacts
     const previous = current - 1;
     setCurrent(previous < 0 ? slides.length - 1 : previous);
   };
 
   const handleNextClick = () => {
+    setIsAutoPlaying(false); // Stop auto-play when user interacts
     const next = current + 1;
     setCurrent(next === slides.length ? 0 : next);
   };

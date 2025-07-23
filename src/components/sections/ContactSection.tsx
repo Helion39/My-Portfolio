@@ -11,6 +11,8 @@ const ContactSection = () => {
     email: "",
     message: ""
   });
+  const [isLoading, setIsLoading] = useState(false);
+  const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -20,12 +22,37 @@ const ContactSection = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const subject = encodeURIComponent(`Portfolio Contact from ${formData.name}`);
-    const body = encodeURIComponent(`Name: ${formData.name}\\nEmail: ${formData.email}\\n\\nMessage:\\n${formData.message}`);
-    window.location.href = `mailto:nabilhanif39@gmail.com?subject=${subject}&body=${body}`;
-    setFormData({ name: "", email: "", message: "" });
+    setIsLoading(true);
+    setStatus('idle');
+
+    try {
+      // EmailJS configuration - Replace these with your actual values
+      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID || 'service_xxxxxxx';
+      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || 'template_xxxxxxx';
+      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || 'your_public_key';
+
+      const templateParams = {
+        name: formData.name,
+        email: formData.email,
+        message: formData.message,
+        to_name: 'Mohammad Nabil Hanif',
+        to_email: 'mohammad.n.hanif@gmail.com',
+        subject: `Portfolio Contact from ${formData.name}`,
+        reply_to: formData.email
+      };
+
+      await emailjs.send(serviceId, templateId, templateParams, publicKey);
+      
+      setStatus('success');
+      setFormData({ name: "", email: "", message: "" });
+    } catch (error) {
+      console.error('EmailJS Error:', error);
+      setStatus('error');
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -84,16 +111,29 @@ const ContactSection = () => {
                 required
                 rows={6}
                 className="w-full"
-                placeholder="Tell me about your project or just say hello..."
+                placeholder="Just say hello! I'd love to hear from you."
               />
             </div>
             <div className="text-center">
               <Button 
                 type="submit"
-                className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                disabled={isLoading}
+                className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Send Message
+                {isLoading ? 'Sending...' : 'Send Message'}
               </Button>
+              
+              {status === 'success' && (
+                <p className="text-green-600 text-sm mt-3">
+                  Message sent successfully! I'll get back to you soon.
+                </p>
+              )}
+              
+              {status === 'error' && (
+                <p className="text-red-600 text-sm mt-3">
+                  Failed to send message. Please try again or contact me directly at mohammad.n.hanif@gmail.com
+                </p>
+              )}
             </div>
           </form>
         </div>
@@ -122,7 +162,7 @@ const ContactSection = () => {
             </a>
             
             <a 
-              href="https://wa.me/1234567890" 
+              href="https://wa.me/6281234567890" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center justify-center w-12 h-12 bg-white rounded-xl border border-gray-200 hover:border-gray-300 hover:shadow-md transition-all duration-300"
