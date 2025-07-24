@@ -3,7 +3,9 @@ import { useParams, Link } from "react-router-dom";
 import { ArrowLeft, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { projects } from "@/data/projects";
+import { projectImages } from "@/data/projectImages";
 import { getIconForTech } from "@/utils/iconMapping";
+import ProjectSlideshow from "@/components/ui/project-slideshow";
 
 const ProjectDetail = () => {
   const { id } = useParams();
@@ -55,13 +57,10 @@ const ProjectDetail = () => {
             </h1>
           </div>
           
-          <div className="aspect-video bg-gradient-to-br from-gray-100 to-gray-50 rounded-2xl overflow-hidden shadow-xl mb-12">
-            <img 
-              src={project.image} 
-              alt={project.title}
-              className="w-full h-full object-cover"
-            />
-          </div>
+          <ProjectSlideshow 
+            images={projectImages[project.id] || [project.image]}
+            title={project.title}
+          />
         </div>
       </section>
 
@@ -102,9 +101,9 @@ const ProjectDetail = () => {
             <h2 className="text-2xl font-medium text-gray-900 mb-6">Technologies Used</h2>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               {project.technologies.map((tech) => (
-                <div key={tech} className="flex items-center space-x-3 p-4 bg-white rounded-xl border border-gray-100 shadow-sm">
-                  <div className="w-8 h-8 bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg flex items-center justify-center">
-                    {getIconForTech(tech)}
+                <div key={tech} className="flex items-center space-x-3 p-3">
+                  <div className="w-8 h-8 flex items-center justify-center">
+                    <div className="text-lg">{getIconForTech(tech)}</div>
                   </div>
                   <span className="text-gray-700 font-medium text-sm">{tech}</span>
                 </div>
