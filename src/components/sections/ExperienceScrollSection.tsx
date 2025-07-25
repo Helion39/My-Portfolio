@@ -79,7 +79,7 @@ const ExperienceScrollSection = () => {
   ];
 
   return (
-    <section id="experience" style={{backgroundColor: '#f8f9fa'}}>
+    <section id="experience" style={{backgroundColor: '#f1f3f4'}}>
       <div className="py-20 px-6 md:px-12">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-6">

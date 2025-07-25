@@ -13,7 +13,7 @@ export default function CarouselDemo() {
       id: "food-ordering",
       title: "Food Ordering Website",
       description: "Full-stack web application built with PHP and MySQL, featuring user authentication and order management.",
-      src: "/projects/FRM2.png",
+      src: "/projects/FoodOrder1.png",
     },
     {
       id: "frm-platform",
@@ -28,16 +28,16 @@ export default function CarouselDemo() {
       src: "/projects/Blend.png",
     },
     {
-      id: "bright-project",
-      title: "BRIGHT - English Teaching Project",
-      description: "Social impact initiative focused on community development and sustainable solutions.",
-      src: "/projects/Bright.png",
+      id: "banddit-reddit-clone",
+      title: "Banddit - Reddit Clone Community Forum",
+      description: "Full-stack social media platform with authentication, real-time interactions, and modern UI.",
+      src: "/projects/Banddit1.png",
     },
     {
-      id: "bancimo",
-      title: "Bancimo - Business Simulation",
-      description: "Interactive business simulation demonstrating marketing leadership and strategic decision-making.",
-      src: "/projects/FRM3.png",
+      id: "safe-elderly-care",
+      title: "SAFE Elderly Care Monitoring System",
+      description: "Healthcare monitoring platform with AI-powered emergency response for elderly care facilities.",
+      src: "/projects/SAFE1.png",
     },
   ];
 

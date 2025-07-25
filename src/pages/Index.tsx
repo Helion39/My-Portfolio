@@ -6,7 +6,9 @@ import AboutSection from "@/components/sections/AboutSection";
 import EducationSection from "@/components/sections/EducationSection";
 import ExperienceScrollSection from "@/components/sections/ExperienceScrollSection";
 import StatsSection from "@/components/sections/StatsSection";
+
 import ProjectsSection from "@/components/sections/ProjectsSection";
+import ProjectCardsSection from "@/components/sections/ProjectCardsSection";
 import ContactSection from "@/components/sections/ContactSection";
 
 const Index = () => {
@@ -40,7 +42,13 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen" style={{backgroundColor: '#f8f9fa'}}>
+    <div
+      className="min-h-screen"
+      style={{
+        background: '#f1f3f4',
+        minHeight: '100vh',
+      }}
+    >
       {/* Desktop Navigation - Original Resizable Navbar */}
       <div className="hidden md:block">
         <NavbarDemo />
@@ -58,13 +66,13 @@ const Index = () => {
       <ExperienceScrollSection />
       <StatsSection />
       <ProjectsSection />
+      <ProjectCardsSection />
       <ContactSection />
-
       {/* Footer */}
-      <footer className="py-12 px-6 md:px-12 border-t border-gray-200" style={{backgroundColor: '#f8f9fa'}}>
+      <footer className="py-12 px-6 md:px-12 border-t border-gray-200" style={{backgroundColor: '#f1f3f4'}}>
         <div className="max-w-7xl mx-auto text-center">
           <p className="text-gray-500 text-sm">
-            © 2024 Mohammad Nabil Hanif. Crafted with precision and purpose.
+            © 2025 Mohammad Nabil Hanif. All rights reserved.
           </p>
         </div>
       </footer>

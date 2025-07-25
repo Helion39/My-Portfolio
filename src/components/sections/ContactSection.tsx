@@ -38,7 +38,7 @@ const ContactSection = () => {
         email: formData.email,
         message: formData.message,
         to_name: 'Mohammad Nabil Hanif',
-        to_email: 'mohammad.n.hanif@gmail.com',
+        to_email: import.meta.env.VITE_CONTACT_EMAIL || 'contact@example.com',
         subject: `Portfolio Contact from ${formData.name}`,
         reply_to: formData.email
       };
@@ -56,12 +56,15 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-20 px-6 md:px-12" style={{backgroundColor: '#f8f9fa'}}>
+    <section id="contact" className="py-20 px-6 md:px-12" style={{backgroundColor: '#f1f3f4'}}>
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-6">Let's Connect</h2>
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
             Have a project in mind or want to connect? I'd love to hear from you.
+          </p>
+          <p className="text-sm text-gray-500 mb-8">
+            Your privacy is important. This form uses secure transmission and your information is only used to respond to your inquiry.
           </p>
         </div>
         
@@ -131,9 +134,13 @@ const ContactSection = () => {
               
               {status === 'error' && (
                 <p className="text-red-600 text-sm mt-3">
-                  Failed to send message. Please try again or contact me directly at mohammad.n.hanif@gmail.com
+                  Failed to send message. Please try again or use the social media links below.
                 </p>
               )}
+              
+              <p className="text-xs text-gray-400 mt-4">
+                By submitting this form, you agree to our privacy practices. No data is stored permanently.
+              </p>
             </div>
           </form>
         </div>

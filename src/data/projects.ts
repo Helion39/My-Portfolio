@@ -23,7 +23,7 @@ export const projects: Project[] = [
     title: "Food Ordering Website",
     category: "Full-Stack Development",
     description: "PHP-MySQL web application with order tracking and product listings",
-    image: "/projects/FRM2.png",
+    image: "/projects/FoodOrder1.png",
     overview: "Built a comprehensive full-stack web application for food ordering with real-time order tracking and dynamic product management. This project demonstrates proficiency in both frontend user experience and backend system architecture.",
     role: "As the full-stack developer, I architected and implemented the entire system from database design to user interface. I focused on creating a scalable backend API and an intuitive frontend that provides seamless ordering experiences for customers and efficient management tools for restaurant owners.",
     technologies: ["PHP", "MySQL", "JavaScript", "HTML/CSS", "AJAX", "Session Management"],
@@ -70,37 +70,37 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: "bright-project",
-    title: "BRIGHT - English Teaching Project",
-    category: "Social Impact & Education",
-    description: "English and environmental awareness sessions for 30+ elementary students",
-    image: "/projects/Bright.png",
-    overview: "Co-led the BRIGHT project as Vice Project Manager, delivering English language and environmental awareness education to over 30 elementary students in a remote settlement near Karawang's industrial zone. This social impact initiative combined educational outreach with community development.",
-    role: "As Vice Project Manager, I coordinated educational activities, developed interactive learning materials, and facilitated sessions that enhanced students' English vocabulary and communication skills while building environmental awareness. My leadership ensured effective program delivery and meaningful community impact.",
-    technologies: ["Team Collaboration", "Project Management", "Educational Planning", "Community Outreach", "Interactive Learning", "Environmental Education"],
+    id: "banddit-reddit-clone",
+    title: "Banddit - Full-Stack Reddit Clone Community Forum",
+    category: "Full-Stack Development",
+    description: "Sophisticated social media platform replicating Reddit's core functionality with modern web technologies",
+    image: "/projects/Banddit1.png",
+    overview: "Developed a sophisticated, full-stack social media platform that replicates Reddit's core functionality using modern web technologies. Banddit demonstrates advanced full-stack development skills through a complete community forum application featuring user authentication, content management, and real-time social interactions.",
+    role: "As the full-stack developer, I architected and implemented the entire social media platform from database design to user interface. My focus was on creating a scalable, secure application that handles complex social interactions, user authentication, and real-time content updates while maintaining optimal performance.",
+    technologies: ["React", "TypeScript", "Redux Toolkit", "Node.js", "Express.js", "MongoDB", "JWT Authentication", "Tailwind CSS", "Radix UI", "Framer Motion"],
     details: [
-      "Coordinated and managed educational sessions for 30+ elementary students in remote settlement",
-      "Developed interactive activities to build English vocabulary and communication skills effectively",
-      "Integrated environmental awareness components to promote civic responsibility and sustainability",
-      "Facilitated collaborative learning environments that encouraged student participation and engagement",
-      "Demonstrated leadership in community outreach and social impact project management"
+      "Built comprehensive authentication system with JWT tokens, password hashing, and Google OAuth integration",
+      "Implemented real-time voting system and comment interactions with optimistic UI updates",
+      "Designed RESTful API with full CRUD operations for posts, comments, and user management",
+      "Created responsive design with dark theme support and mobile-first approach using Tailwind CSS",
+      "Developed advanced state management using Redux Toolkit for complex application state handling"
     ]
   },
   {
-    id: "bancimo",
-    title: "Bancimo - Business Simulation",
-    category: "Marketing & Business",
-    description: "Marketing leadership for campus-wide business simulation project",
-    image: "/projects/FRM3.png",
-    overview: "Led marketing strategy for Bancimo, a snack business created during a comprehensive campus-wide economic survival simulation. This project demonstrated practical business skills through real-world market competition and strategic brand positioning.",
-    role: "As PIC of Marketing, I developed and executed comprehensive marketing strategies including branding, promotional campaigns, and customer engagement initiatives. My leadership in marketing contributed significantly to increased product visibility and sales performance in the competitive simulation environment.",
-    technologies: ["Marketing Strategy", "Brand Development", "Digital Marketing", "Customer Engagement", "Sales Analytics", "Team Leadership"],
+    id: "safe-elderly-care",
+    title: "SAFE Elderly Care Monitoring System",
+    category: "Healthcare Technology",
+    description: "Healthcare monitoring platform enhancing elderly care through intelligent monitoring and emergency response",
+    image: "/projects/SAFE1.png",
+    overview: "Developed a comprehensive healthcare monitoring platform designed to enhance elderly care in nursing homes through intelligent monitoring and emergency response coordination. The SAFE (Smart Assisted Fall Emergency) system combines human caregiving with AI-powered monitoring to improve elderly care outcomes and patient safety.",
+    role: "As the full-stack developer and healthcare systems architect, I designed and implemented the complete monitoring platform from database architecture to real-time emergency response systems. My focus was on creating a reliable, secure healthcare application that prioritizes patient safety and caregiver efficiency.",
+    technologies: ["React", "TypeScript", "Node.js", "Express.js", "MongoDB", "Socket.io", "Tailwind CSS", "JWT Authentication", "Recharts", "Healthcare APIs"],
     details: [
-      "Developed comprehensive marketing strategy for snack business in competitive campus simulation",
-      "Created effective branding and promotional materials that increased product visibility significantly",
-      "Implemented both digital and on-site marketing strategies to maximize customer reach",
-      "Managed customer engagement initiatives that contributed to increased sales performance",
-      "Demonstrated leadership in cross-functional team collaboration and strategic business planning"
+      "Built role-based dashboards for Admins, Caregivers, and Family Members with healthcare-specific workflows",
+      "Implemented real-time vital signs monitoring with interactive charts for blood pressure and heart rate tracking",
+      "Developed emergency response system with immediate alert broadcasting and caregiver coordination",
+      "Created comprehensive incident management system with complete audit trails for emergency responses",
+      "Designed secure healthcare data handling with compliance-focused privacy controls and JWT authentication"
     ]
   }
 ];

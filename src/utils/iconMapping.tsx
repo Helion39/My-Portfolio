@@ -53,7 +53,17 @@ export const getIconForTech = (tech: string): JSX.Element => {
     "Interactive Visualization": <MdAnalytics className="text-[#8B5CF6]" />,
     "ISO/IEC 27005": <FaShieldAlt className="text-[#DC2626]" />,
     "Risk Assessment Framework": <MdSecurity className="text-[#EF4444]" />,
-    "Cybersecurity Standards": <FaShieldAlt className="text-[#059669]" />
+    "Cybersecurity Standards": <FaShieldAlt className="text-[#059669]" />,
+    "Node.js": <FaJs className="text-[#339933]" />,
+    "Express.js": <FaJs className="text-[#000000]" />,
+    "MongoDB": <FaDatabase className="text-[#47A248]" />,
+    "Socket.io": <FaNetworkWired className="text-[#010101]" />,
+    "JWT Authentication": <FaShieldAlt className="text-[#000000]" />,
+    "Recharts": <MdAnalytics className="text-[#8884D8]" />,
+    "Healthcare APIs": <MdApi className="text-[#FF6B6B]" />,
+    "Redux Toolkit": <FaReact className="text-[#764ABC]" />,
+    "Radix UI": <FaReact className="text-[#161618]" />,
+    "Framer Motion": <MdBrush className="text-[#0055FF]" />
   };
   
   return iconMap[tech] || <div className="w-3 h-3 bg-gray-600 rounded-sm"></div>;

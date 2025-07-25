@@ -5,7 +5,8 @@ export const projectImages: Record<string, string[]> = {
     "/projects/Cybersecurity Audit PT. Sequre Gate One2.png"
   ],
   "food-ordering": [
-    "/projects/FRM2.png" // Using FRM2 as placeholder - you can add actual food ordering images later
+    "/projects/FoodOrder1.png",
+    "/projects/FoodOrder2.png"
   ],
   "frm-platform": [
     "/projects/FRM1.png",
@@ -16,13 +17,10 @@ export const projectImages: Record<string, string[]> = {
   "urban-night-city": [
     "/projects/Blend.png"
   ],
-  "bright-project": [
-    "/projects/Bright.png",
-    "/projects/BrightInformasi.png",
-    "/projects/BrightInspirasi.png",
-    "/projects/BrightKreasi.png"
+  "banddit-reddit-clone": [
+    "/projects/Banddit1.png"
   ],
-  "bancimo": [
-    "/projects/FRM3.png" // Using FRM3 as placeholder - you can add actual Bancimo images later
+  "safe-elderly-care": [
+    "/projects/SAFE1.png"
   ]
 };
