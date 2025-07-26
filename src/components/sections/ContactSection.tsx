@@ -160,7 +160,7 @@ const ContactSection = () => {
             </a>
             
             <a 
-              href="https://github.com/nabilhanif" 
+              href="https://github.com/Helion39" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center justify-center w-12 h-12 bg-white rounded-xl border border-gray-200 hover:border-gray-300 hover:shadow-md transition-all duration-300"
@@ -169,7 +169,7 @@ const ContactSection = () => {
             </a>
             
             <a 
-              href="https://wa.me/6281234567890" 
+              href="https://wa.me/6282246202003" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center justify-center w-12 h-12 bg-white rounded-xl border border-gray-200 hover:border-gray-300 hover:shadow-md transition-all duration-300"
@@ -178,7 +178,7 @@ const ContactSection = () => {
             </a>
             
             <a 
-              href="https://t.me/nabilhanif" 
+              href="https://t.me/+6282246202003" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center justify-center w-12 h-12 bg-white rounded-xl border border-gray-200 hover:border-gray-300 hover:shadow-md transition-all duration-300"
