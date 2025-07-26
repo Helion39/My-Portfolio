@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { FaLinkedin, FaGithub, FaWhatsapp, FaTelegram, FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaWhatsapp, FaTelegram } from "react-icons/fa";
 import emailjs from '@emailjs/browser';
 
 const ContactSection = () => {
@@ -184,15 +184,6 @@ const ContactSection = () => {
               className="flex items-center justify-center w-12 h-12 bg-white rounded-xl border border-gray-200 hover:border-gray-300 hover:shadow-md transition-all duration-300"
             >
               <FaTelegram className="w-5 h-5 text-gray-700" />
-            </a>
-            
-            <a 
-              href="https://instagram.com/nabilhanif" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="flex items-center justify-center w-12 h-12 bg-white rounded-xl border border-gray-200 hover:border-gray-300 hover:shadow-md transition-all duration-300"
-            >
-              <FaInstagram className="w-5 h-5 text-gray-700" />
             </a>
           </div>
         </div>
