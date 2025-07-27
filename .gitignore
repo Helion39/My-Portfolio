@@ -99,9 +99,37 @@ Thumbs.db
 # Private development files
 cv-data.txt
 REFERENCES.md
-.kiro/
 
-# Personal notes and sensitive information
+# Kiro IDE related files
+.kiro/
+*.kiro
+kiro-*
+*kiro*
+.kiro-*
+
+# Personal data and sensitive information
+CV.txt
+cv.txt
+resume.txt
+RESUME.txt
+personal-info.txt
+contact-info.txt
 *.private
 *.secret
+*.personal
 personal-notes/
+private/
+sensitive/
+credentials/
+keys/
+secrets/
+
+# Personal documents
+*.pdf
+*.doc
+*.docx
+personal-*
+*-personal.*
+
+# Git ignore itself
+.gitignore
