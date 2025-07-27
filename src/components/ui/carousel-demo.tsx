@@ -1,49 +1,48 @@
 "use client";
+import { useState } from "react";
 import ProjectCarousel from "@/components/ui/project-carousel";
+import ProjectModal from "@/components/ui/project-modal";
+import { projects } from "@/data/projects";
+import { Project } from "@/types";
 
 export default function CarouselDemo() {
-  const slideData = [
-    {
-      id: "digital-forensics",
-      title: "Digital Forensic Case Investigations",
-      description: "Comprehensive forensic analysis using industry-standard tools and methodologies for cybersecurity investigations.",
-      src: "/projects/Cybersecurity Audit PT. Sequre Gate One1.png",
-    },
-    {
-      id: "food-ordering",
-      title: "Food Ordering Website",
-      description: "Full-stack web application built with PHP and MySQL, featuring user authentication and order management.",
-      src: "/projects/FoodOrder1.png",
-    },
-    {
-      id: "frm-platform",
-      title: "Free Risk Management (FRM)",
-      description: "Cybersecurity Risk Assessment Platform, visualizing ISO/IEC 27005 risk assessment process for systematic security evaluation.",
-      src: "/projects/FRM1.png",
-    },
-    {
-      id: "urban-night-city",
-      title: "Urban Night City",
-      description: "Detailed 3D environment modeling showcasing architectural design and lighting techniques.",
-      src: "/projects/Blend.png",
-    },
-    {
-      id: "banddit-reddit-clone",
-      title: "Banddit - Reddit Clone Community Forum",
-      description: "Full-stack social media platform with authentication, real-time interactions, and modern UI.",
-      src: "/projects/Banddit1.png",
-    },
-    {
-      id: "safe-elderly-care",
-      title: "SAFE Elderly Care Monitoring System",
-      description: "Healthcare monitoring platform with AI-powered emergency response for elderly care facilities.",
-      src: "/projects/SAFE1.png",
-    },
-  ];
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  // Convert projects data to carousel slide format
+  const slideData = projects.map(project => ({
+    id: project.id,
+    title: project.title,
+    description: project.description,
+    src: project.image,
+  }));
+
+  const handleProjectClick = (projectId: string) => {
+    const project = projects.find(p => p.id === projectId);
+    if (project) {
+      setSelectedProject(project);
+      setIsModalOpen(true);
+    }
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedProject(null);
+  };
 
   return (
     <div className="relative overflow-hidden w-full h-full py-20">
-      <ProjectCarousel slides={slideData} />
+      <ProjectCarousel 
+        slides={slideData} 
+        onProjectClick={handleProjectClick}
+      />
+      
+      {/* Project Modal */}
+      <ProjectModal 
+        project={selectedProject}
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+      />
     </div>
   );
 }

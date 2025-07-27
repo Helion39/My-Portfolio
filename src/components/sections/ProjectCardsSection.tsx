@@ -1,8 +1,21 @@
 import { projects } from "@/data/projects";
-import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+import ProjectModal from "@/components/ui/project-modal";
+import { Project } from "@/types";
 
 const ProjectCardsSection = () => {
-  const navigate = useNavigate();
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleProjectClick = (project: Project) => {
+    setSelectedProject(project);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedProject(null);
+  };
 
   return (
     <section id="project-cards" className="py-20 px-6 md:px-12" style={{backgroundColor: '#f1f3f4'}}>
@@ -22,10 +35,10 @@ const ProjectCardsSection = () => {
               style={{
                 backdropFilter: 'blur(20px)',
                 background: 'rgba(255, 255, 255, 0.2)',
-                border: '1px solid rgba(200, 200, 200, 0.3)',
+                border: '3px solid rgba(210, 210, 210, 0.8)',
                 boxShadow: '0 8px 32px rgba(0, 0, 0, 0.06)'
               }}
-              onClick={() => navigate(`/project/${project.id}`)}
+              onClick={() => handleProjectClick(project)}
               tabIndex={0}
               role="button"
               aria-label={`View details for ${project.title}`}
@@ -39,7 +52,7 @@ const ProjectCardsSection = () => {
                 style={{
                   backdropFilter: 'blur(15px)',
                   background: 'rgba(255, 255, 255, 0.25)',
-                  border: '1px solid rgba(200, 200, 200, 0.25)'
+                  border: '3px solid rgba(210, 210, 210, 0.8)'
                 }}
               >
                 <img 
@@ -55,23 +68,41 @@ const ProjectCardsSection = () => {
               </div>
               
               {/* Category Badge */}
-              <div className="mb-3">
+              <div className="mb-3 flex items-center gap-2">
                 <span 
                   className="inline-block px-3 py-1 rounded-full text-xs font-medium text-gray-700"
                   style={{
                     backdropFilter: 'blur(10px)',
                     background: 'rgba(255, 255, 255, 0.3)',
-                    border: '1px solid rgba(200, 200, 200, 0.3)'
+                    border: '3px solid rgba(210, 210, 210, 0.8)'
                   }}
                 >
                   {project.category}
                 </span>
+                {/* AI Tag - show for projects that have AI in technologies */}
+                {project.technologies.includes("AI") && (
+                  <span 
+                    className="inline-block px-3 py-1 rounded-full text-xs font-medium text-gray-700"
+                    style={{
+                      backdropFilter: 'blur(10px)',
+                      background: 'rgba(255, 255, 255, 0.3)',
+                      border: '3px solid rgba(210, 210, 210, 0.8)'
+                    }}
+                  >
+                    AI
+                  </span>
+                )}
               </div>
               
               {/* Project Title */}
               <h3 className="text-xl font-semibold text-gray-900 mb-3 transition-colors duration-200">
                 {project.title}
               </h3>
+              
+              {/* Project Period */}
+              {project.period && (
+                <p className="text-xs text-gray-500 mb-2">{project.period}</p>
+              )}
               
               {/* Project Description */}
               <p className="text-gray-700 mb-6 text-sm leading-relaxed line-clamp-3 flex-grow">
@@ -80,14 +111,16 @@ const ProjectCardsSection = () => {
               
               {/* Technologies */}
               <div className="flex flex-wrap gap-2 mb-6">
-                {project.technologies.map((tech) => (
+                {project.technologies
+                  .filter((tech) => tech !== "AI" && tech !== "Full-Stack Development")
+                  .map((tech) => (
                   <span 
                     key={tech} 
                     className="px-3 py-1 rounded-md text-xs font-medium text-gray-600"
                     style={{
                       backdropFilter: 'blur(10px)',
                       background: 'rgba(255, 255, 255, 0.25)',
-                      border: '1px solid rgba(200, 200, 200, 0.3)'
+                      border: '3px solid rgba(210, 210, 210, 0.8)'
                     }}
                   >
                     {tech}
@@ -102,11 +135,11 @@ const ProjectCardsSection = () => {
                   style={{
                     backdropFilter: 'blur(10px)',
                     background: 'rgba(255, 255, 255, 0.25)',
-                    border: '1px solid rgba(200, 200, 200, 0.3)'
+                    border: '3px solid rgba(210, 210, 210, 0.8)'
                   }}
                   onClick={(e) => {
                     e.stopPropagation();
-                    navigate(`/project/${project.id}`);
+                    handleProjectClick(project);
                   }}
                 >
                   View Details
@@ -117,7 +150,7 @@ const ProjectCardsSection = () => {
                     style={{
                       backdropFilter: 'blur(10px)',
                       background: 'rgba(255, 255, 255, 0.15)',
-                      border: '1px solid rgba(200, 200, 200, 0.25)'
+                      border: '3px solid rgba(210, 210, 210, 0.8)'
                     }}
                     onClick={(e) => {
                       e.stopPropagation();
@@ -131,7 +164,7 @@ const ProjectCardsSection = () => {
                     style={{
                       backdropFilter: 'blur(10px)',
                       background: '#1f2937',
-                      border: '1px solid rgba(100, 100, 100, 0.4)'
+                      border: '3px solid rgba(210, 210, 210, 0.8)'
                     }}
                     onClick={(e) => {
                       e.stopPropagation();
@@ -145,6 +178,13 @@ const ProjectCardsSection = () => {
           ))}
         </div>
       </div>
+
+      {/* Project Modal */}
+      <ProjectModal 
+        project={selectedProject}
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+      />
     </section>
   );
 };

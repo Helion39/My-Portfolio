@@ -46,9 +46,11 @@ This feature focuses on enhancing Mohammad Nabil Hanif's portfolio website to be
 #### Acceptance Criteria
 
 1. WHEN I view the projects section THEN it SHALL include all major projects from his CV with accurate descriptions
-2. WHEN I click on a project THEN it SHALL show detailed technical information, technologies used, and his specific contributions
-3. WHEN I review his cybersecurity development work THEN it SHALL highlight the Free Risk Management (FRM) platform with ISO/IEC 27005 risk assessment visualization
-4. WHEN I examine his web development projects THEN they SHALL demonstrate full-stack capabilities with PHP, MySQL, and modern frameworks
+2. WHEN I click on a project from the carousel THEN it SHALL open a modal with essential project information, technologies used, and key details
+3. WHEN I click on a project from other navigation paths THEN it SHALL navigate to the dedicated project page with comprehensive information
+4. WHEN I review his cybersecurity development work THEN it SHALL highlight the Free Risk Management (FRM) platform with ISO/IEC 27005 risk assessment visualization
+5. WHEN I examine his web development projects THEN they SHALL demonstrate full-stack capabilities with PHP, MySQL, and modern frameworks
+6. WHEN I view a project modal THEN it SHALL display concise but essential information without requiring scrolling
 
 ### Requirement 5
 
@@ -105,6 +107,17 @@ This feature focuses on enhancing Mohammad Nabil Hanif's portfolio website to be
 2. WHEN I examine the layout THEN it SHALL demonstrate good use of whitespace and visual balance
 3. WHEN I review color choices THEN they SHALL be professional and enhance readability
 4. WHEN I assess the overall design THEN it SHALL reflect modern web design principles and best practices
+
+### Requirement 10
+
+**User Story:** As a visitor viewing Mohammad's skills and technology sections, I want all bordered elements to have consistent styling, so that the portfolio appears polished and professionally designed.
+
+#### Acceptance Criteria
+
+1. WHEN I view any skill cards, technology cards, or bordered elements THEN they SHALL all use the same border color and thickness
+2. WHEN I examine the borders THEN they SHALL be thicker than the current implementation for better visual prominence
+3. WHEN I compare different sections THEN all bordered elements SHALL maintain visual consistency across the entire portfolio
+4. WHEN I view the portfolio THEN the border styling SHALL create a cohesive design language throughout all components
 
 
 ## Sticky Scroll

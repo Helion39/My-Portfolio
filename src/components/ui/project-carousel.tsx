@@ -80,6 +80,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
               current === index
                 ? "translate3d(calc(var(--x) / 30), calc(var(--y) / 30), 0)"
                 : "none",
+            border: '3px solid rgba(210, 210, 210, 0.8)'
           }}
         >
           {src ? (
@@ -104,8 +105,8 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
             <div className="absolute inset-0 bg-black/30 transition-all duration-1000" />
           )}
           
-          {/* Text overlay - appears on hover, aligned to right */}
-          <div className="absolute inset-0 opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-6 md:p-8">
+          {/* Text overlay - appears on hover for desktop, always visible on mobile/tablet */}
+          <div className="absolute inset-0 opacity-100 md:opacity-0 md:hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-6 md:p-8">
             <div className="text-right max-w-xs">
               <h3 className="text-lg md:text-xl lg:text-2xl font-semibold mb-2">
                 {title}
@@ -147,9 +148,10 @@ const CarouselControl = ({
 
 interface ProjectCarouselProps {
   slides: SlideData[];
+  onProjectClick?: (projectId: string) => void;
 }
 
-export default function ProjectCarousel({ slides }: ProjectCarouselProps) {
+export default function ProjectCarousel({ slides, onProjectClick }: ProjectCarouselProps) {
   const [current, setCurrent] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
   const navigate = useNavigate();
@@ -181,8 +183,12 @@ export default function ProjectCarousel({ slides }: ProjectCarouselProps) {
     if (current !== index) {
       setCurrent(index);
     } else {
-      // If clicking on the current slide, navigate to project detail page
-      navigate(`/project/${slides[index].id}`);
+      // If clicking on the current slide, call the callback or navigate to project detail page
+      if (onProjectClick) {
+        onProjectClick(slides[index].id);
+      } else {
+        navigate(`/project/${slides[index].id}`);
+      }
     }
   };
 

@@ -19,7 +19,7 @@ const EducationSection = () => {
               style={{
                 backdropFilter: 'blur(20px)',
                 background: 'rgba(255, 255, 255, 0.2)',
-                border: '1px solid rgba(200, 200, 200, 0.3)'
+                border: '3px solid rgba(210, 210, 210, 0.8)'
               }}
             >
               <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
@@ -31,18 +31,14 @@ const EducationSection = () => {
                       <span 
                         key={index} 
                         className={`px-3 py-1 rounded-full text-sm font-medium ${
-                          achievement.includes('GPA') ? 'text-green-800' :
                           achievement.includes('Scholarship') ? 'text-blue-800' :
                           'text-purple-800'
                         }`}
                         style={{
                           backdropFilter: 'blur(10px)',
-                          background: achievement.includes('GPA') ? 'rgba(34, 197, 94, 0.15)' :
-                                     achievement.includes('Scholarship') ? 'rgba(59, 130, 246, 0.15)' :
+                          background: achievement.includes('Scholarship') ? 'rgba(59, 130, 246, 0.15)' :
                                      'rgba(147, 51, 234, 0.15)',
-                          border: `1px solid ${achievement.includes('GPA') ? 'rgba(34, 197, 94, 0.25)' :
-                                              achievement.includes('Scholarship') ? 'rgba(59, 130, 246, 0.25)' :
-                                              'rgba(147, 51, 234, 0.25)'}`
+                          border: `3px solid rgba(210, 210, 210, 0.8)`
                         }}
                       >
                         {achievement}

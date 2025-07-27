@@ -6,8 +6,7 @@ export const education: Education[] = [
     degree: "Bachelor of Informatics",
     institution: "President University",
     period: "Sep 2023 - Dec 2026",
-    gpa: "3.80/4.00",
-    achievements: ["GPA: 3.80/4.00", "Jababeka Scholarship Rank 2"],
+    achievements: ["Jababeka Scholarship Rank 2"],
     description: "Partial scholarship awarded based on outstanding high school academic performance. Focusing on cybersecurity, system analysis, and web development."
   },
   {
