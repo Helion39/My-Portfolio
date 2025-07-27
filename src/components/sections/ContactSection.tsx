@@ -84,6 +84,10 @@ const ContactSection = () => {
                   required
                   className="w-full"
                   placeholder="Your name"
+                  style={{
+                    border: '3px solid rgba(210, 210, 210, 0.8)',
+                    borderRadius: '0.75rem'
+                  }}
                 />
               </div>
               <div>
@@ -99,6 +103,10 @@ const ContactSection = () => {
                   required
                   className="w-full"
                   placeholder="your.email@example.com"
+                  style={{
+                    border: '3px solid rgba(210, 210, 210, 0.8)',
+                    borderRadius: '0.75rem'
+                  }}
                 />
               </div>
             </div>
@@ -115,6 +123,10 @@ const ContactSection = () => {
                 rows={6}
                 className="w-full"
                 placeholder="Just say hello! I'd love to hear from you."
+                style={{
+                  border: '3px solid rgba(210, 210, 210, 0.8)',
+                  borderRadius: '0.75rem'
+                }}
               />
             </div>
             <div className="text-center">
@@ -154,7 +166,10 @@ const ContactSection = () => {
               href="https://www.linkedin.com/in/mohammad-nabil-hanif-469b97303" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="flex items-center justify-center w-12 h-12 bg-white rounded-xl border border-gray-200 hover:border-gray-300 hover:shadow-md transition-all duration-300"
+              className="flex items-center justify-center w-12 h-12 bg-white rounded-xl hover:shadow-md transition-all duration-300"
+              style={{
+                border: '3px solid rgba(210, 210, 210, 0.8)'
+              }}
             >
               <FaLinkedin className="w-5 h-5 text-gray-700" />
             </a>
@@ -163,7 +178,10 @@ const ContactSection = () => {
               href="https://github.com/Helion39" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="flex items-center justify-center w-12 h-12 bg-white rounded-xl border border-gray-200 hover:border-gray-300 hover:shadow-md transition-all duration-300"
+              className="flex items-center justify-center w-12 h-12 bg-white rounded-xl hover:shadow-md transition-all duration-300"
+              style={{
+                border: '3px solid rgba(210, 210, 210, 0.8)'
+              }}
             >
               <FaGithub className="w-5 h-5 text-gray-700" />
             </a>
@@ -172,7 +190,10 @@ const ContactSection = () => {
               href="https://wa.me/6282246202003" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="flex items-center justify-center w-12 h-12 bg-white rounded-xl border border-gray-200 hover:border-gray-300 hover:shadow-md transition-all duration-300"
+              className="flex items-center justify-center w-12 h-12 bg-white rounded-xl hover:shadow-md transition-all duration-300"
+              style={{
+                border: '3px solid rgba(210, 210, 210, 0.8)'
+              }}
             >
               <FaWhatsapp className="w-5 h-5 text-gray-700" />
             </a>
@@ -181,7 +202,10 @@ const ContactSection = () => {
               href="https://t.me/+6282246202003" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="flex items-center justify-center w-12 h-12 bg-white rounded-xl border border-gray-200 hover:border-gray-300 hover:shadow-md transition-all duration-300"
+              className="flex items-center justify-center w-12 h-12 bg-white rounded-xl hover:shadow-md transition-all duration-300"
+              style={{
+                border: '3px solid rgba(210, 210, 210, 0.8)'
+              }}
             >
               <FaTelegram className="w-5 h-5 text-gray-700" />
             </a>

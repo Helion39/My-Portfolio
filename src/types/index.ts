@@ -4,6 +4,7 @@ export interface Project {
   category: string;
   description: string;
   image: string;
+  period?: string;
   overview: string;
   role: string;
   technologies: string[];

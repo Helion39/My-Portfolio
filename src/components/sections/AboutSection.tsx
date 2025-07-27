@@ -7,7 +7,7 @@ const AboutSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-6">About Me</h2>
           <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto mb-8">
-            I am an Information Technology scholar at President University (GPA 3.80/4.00) passionate about building digital experiences that are functional, intuitive, and secure. My work is driven by a belief that the best technology feels both effortless and safe.
+            I am an Information Technology scholar at President University passionate about building digital experiences that are functional, intuitive, and secure. My work is driven by a belief that the best technology feels both effortless and safe.
           </p>
         </div>
 
@@ -52,7 +52,7 @@ const AboutSection = () => {
                   style={{
                     backdropFilter: 'blur(15px)',
                     background: 'rgba(255, 255, 255, 0.2)',
-                    border: '1px solid rgba(200, 200, 200, 0.3)'
+                    border: '3px solid rgba(210, 210, 210, 0.8)'
                   }}
                 >
                   <div className="w-8 h-8 rounded-lg flex items-center justify-center">
