@@ -1,73 +1,56 @@
-# Welcome to your Lovable project
+# My Portfolio
 
-## Project info
+A modern, responsive portfolio website showcasing my work as a Full-Stack Developer and Systems Analyst specializing in Web Development, Cybersecurity, and UI/UX Design.
 
-**URL**: https://lovable.dev/projects/94a2fc97-907b-4541-82ed-24668261bd28
+## �‍💻v About Me
 
-## How can I edit this code?
+I'm a passionate developer with expertise in:
+- **Full-Stack Development** - Building scalable web applications
+- **Cybersecurity** - Digital forensics and risk assessment
+- **UI/UX Design** - Creating intuitive user experiences
+- **3D Modeling & Animation** - Creative visual content
 
-There are several ways of editing your application.
+## 🛠️ Featured Projects
 
-**Use Lovable**
+### 🔒 Free Risk Management (FRM) Platform
+Interactive cybersecurity risk assessment platform visualizing the ISO/IEC 27005 process
+- **Tech Stack**: React, TypeScript, Tailwind CSS
+- **Features**: Interactive visualization, threat assessment, real-time analysis
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/94a2fc97-907b-4541-82ed-24668261bd28) and start prompting.
+### 🍕 Food Ordering Website
+Full-stack web application with order tracking and dynamic product management
+- **Tech Stack**: PHP, MySQL, JavaScript, HTML/CSS
+- **Features**: Real-time tracking, secure authentication, responsive design
 
-Changes made via Lovable will be committed automatically to this repo.
+### �t SAFE Elderly Care Monitoring System
+Healthcare monitoring platform for elderly care with AI-powered monitoring
+- **Tech Stack**: React, Node.js, MongoDB, Socket.io
+- **Features**: Real-time monitoring, emergency response, role-based dashboards
 
-**Use your preferred IDE**
+### 🔍 Digital Forensic Case Investigations
+Professional cybersecurity incident analysis and forensic investigations
+- **Tech Stack**: Wireshark, Network Miner, PCAP Analysis
+- **Focus**: Network traffic analysis, incident response, forensic reporting
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### 🎨 Urban Night City
+Collaborative 3D animation project with detailed urban environments
+- **Tech Stack**: 3D Modeling Software, Animation Tools
+- **Features**: Dynamic lighting, character animation, environmental design
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 💻 Tech Stack
 
-Follow these steps:
+**Frontend**: React, TypeScript, JavaScript, Tailwind CSS, Framer Motion  
+**Backend**: Node.js, Express.js, PHP, MySQL, MongoDB  
+**Tools**: Git, Figma, Wireshark, 3D Modeling Software
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🎯 Key Skills
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- Full-stack web application development
+- Cybersecurity analysis and digital forensics
+- UI/UX design and user research
+- Database design and optimization
+- Team collaboration and project management
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/94a2fc97-907b-4541-82ed-24668261bd28) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Built with React, TypeScript, and Tailwind CSS
