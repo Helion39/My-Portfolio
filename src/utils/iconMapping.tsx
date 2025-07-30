@@ -20,6 +20,8 @@ export const getIconForTech = (tech: string): JSX.Element => {
     "User Research": <FaUsers className="text-[#4285F4]" />,
     "Wireframing": <HiOutlineDocumentText className="text-[#6366F1]" />,
     "Prototyping": <MdBrush className="text-[#EC4899]" />,
+    "Design Thinking": <HiOutlineLightBulb className="text-[#8B5CF6]" />,
+    "UX Research": <FaSearch className="text-[#059669]" />,
     "Persona Development": <HiOutlineUserGroup className="text-[#8B5CF6]" />,
     "AJAX": <MdApi className="text-[#F59E0B]" />,
     "Session Management": <MdSettings className="text-[#6B7280]" />,

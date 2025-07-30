@@ -118,7 +118,7 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
     <div
       onMouseLeave={() => setHovered(null)}
       className={cn(
-        "flex flex-1 flex-row items-center justify-center space-x-6 text-sm font-medium text-gray-700 transition duration-200 lg:flex",
+        "flex flex-1 flex-row items-center justify-center space-x-6 text-sm font-medium text-gray-900 transition duration-200 lg:flex",
         className
       )}
     >
@@ -126,7 +126,8 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
         <a
           onMouseEnter={() => setHovered(idx)}
           onClick={onItemClick}
-          className="relative px-2 py-2 text-gray-700 hover:text-gray-900 transition-all duration-300"
+          className="relative px-2 py-2 text-gray-900 hover:text-black transition-all duration-300 font-medium"
+          style={{ textShadow: '0 1px 2px rgba(255, 255, 255, 0.8), 0 0 4px rgba(255, 255, 255, 0.6)' }}
           key={`link-${idx}`}
           href={item.link}
         >
@@ -233,7 +234,12 @@ export const NavbarLogo = () => {
       href="#"
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black"
     >
-      <span className="font-medium text-black dark:text-white">MNH.</span>
+      <span 
+        className="font-bold text-gray-900 dark:text-white"
+        style={{ textShadow: '0 1px 2px rgba(255, 255, 255, 0.8), 0 0 4px rgba(255, 255, 255, 0.6)' }}
+      >
+        MNH.
+      </span>
     </a>
   );
 };

@@ -1,7 +1,7 @@
 
 import { FlipWords } from "@/components/ui/flip-words";
-// Import the illustration from public/png/MeIlust.png
-import MeIlust from "@/../public/png/MeIlust.png";
+// Import the portrait image from public/png/MePicPort.jpg
+import MePicPort from "@/../public/png/MePicPort.jpg";
 
 const HeroSection = () => {
   const specialties = ["Web Development", "Cybersecurity", "UI/UX Design"];
@@ -10,14 +10,23 @@ const HeroSection = () => {
     <section id="home" className="min-h-screen flex items-center px-6 md:px-12" style={{backgroundColor: '#f1f3f4'}}>
       <div className="max-w-7xl mx-auto w-full">
         <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
-          {/* Left side illustration */}
+          {/* Left side portrait */}
           <div className="hidden md:flex justify-center items-center">
-            <img
-              src={MeIlust}
-              alt="Illustration of Mohammad Nabil Hanif"
-              className="w-[320px] h-auto object-contain drop-shadow-xl"
-              draggable={false}
-            />
+            <div 
+              className="p-4 rounded-2xl drop-shadow-xl"
+              style={{
+                border: '3px solid rgba(210, 210, 210, 0.8)',
+                backdropFilter: 'blur(20px)',
+                background: 'rgba(255, 255, 255, 0.2)'
+              }}
+            >
+              <img
+                src={MePicPort}
+                alt="Portrait of Mohammad Nabil Hanif"
+                className="w-[320px] h-auto object-contain rounded-xl"
+                draggable={false}
+              />
+            </div>
           </div>
           <div className="space-y-6">
             <div className="space-y-2">

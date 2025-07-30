@@ -44,7 +44,7 @@ const ContactSection = () => {
       };
 
       await emailjs.send(serviceId, templateId, templateParams, publicKey);
-      
+
       setStatus('success');
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
@@ -56,7 +56,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-20 px-6 md:px-12" style={{backgroundColor: '#f1f3f4'}}>
+    <section id="contact" className="py-20 px-6 md:px-12" style={{ backgroundColor: '#f1f3f4' }}>
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-6">Let's Connect</h2>
@@ -67,7 +67,7 @@ const ContactSection = () => {
             Your privacy is important. This form uses secure transmission and your information is only used to respond to your inquiry.
           </p>
         </div>
-        
+
         <div className="max-w-2xl mx-auto mb-12">
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid md:grid-cols-2 gap-6">
@@ -130,26 +130,26 @@ const ContactSection = () => {
               />
             </div>
             <div className="text-center">
-              <Button 
+              <Button
                 type="submit"
                 disabled={isLoading}
                 className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isLoading ? 'Sending...' : 'Send Message'}
               </Button>
-              
+
               {status === 'success' && (
                 <p className="text-green-600 text-sm mt-3">
                   Message sent successfully! I'll get back to you soon.
                 </p>
               )}
-              
+
               {status === 'error' && (
                 <p className="text-red-600 text-sm mt-3">
                   Failed to send message. Please try again or use the social media links below.
                 </p>
               )}
-              
+
               <p className="text-xs text-gray-400 mt-4">
                 By submitting this form, you agree to our privacy practices. No data is stored permanently.
               </p>
@@ -162,9 +162,9 @@ const ContactSection = () => {
             Or connect with me on social media
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <a 
-              href="https://www.linkedin.com/in/mohammad-nabil-hanif-469b97303" 
-              target="_blank" 
+            <a
+              href="https://www.linkedin.com/in/mohammad-nabil-hanif-469b97303"
+              target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center w-12 h-12 bg-white rounded-xl hover:shadow-md transition-all duration-300"
               style={{
@@ -173,10 +173,10 @@ const ContactSection = () => {
             >
               <FaLinkedin className="w-5 h-5 text-gray-700" />
             </a>
-            
-            <a 
-              href="https://github.com/Helion39" 
-              target="_blank" 
+
+            <a
+              href="https://github.com/Helion39"
+              target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center w-12 h-12 bg-white rounded-xl hover:shadow-md transition-all duration-300"
               style={{
@@ -185,10 +185,10 @@ const ContactSection = () => {
             >
               <FaGithub className="w-5 h-5 text-gray-700" />
             </a>
-            
-            <a 
-              href="https://wa.me/6282246202003" 
-              target="_blank" 
+
+            <a
+              href="https://wa.me/6282246202003"
+              target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center w-12 h-12 bg-white rounded-xl hover:shadow-md transition-all duration-300"
               style={{
@@ -197,10 +197,10 @@ const ContactSection = () => {
             >
               <FaWhatsapp className="w-5 h-5 text-gray-700" />
             </a>
-            
-            <a 
-              href="https://t.me/+6282246202003" 
-              target="_blank" 
+
+            <a
+              href="https://t.me/+6282246202003"
+              target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center w-12 h-12 bg-white rounded-xl hover:shadow-md transition-all duration-300"
               style={{

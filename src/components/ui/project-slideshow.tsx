@@ -5,9 +5,10 @@ import { motion, AnimatePresence } from "framer-motion";
 interface ProjectSlideshowProps {
   images: string[];
   title: string;
+  projectId?: string;
 }
 
-const ProjectSlideshow: React.FC<ProjectSlideshowProps> = ({ images, title }) => {
+const ProjectSlideshow: React.FC<ProjectSlideshowProps> = ({ images, title, projectId }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isZoomed, setIsZoomed] = useState(false);
   const [zoomedImageIndex, setZoomedImageIndex] = useState(0);
@@ -38,7 +39,7 @@ const ProjectSlideshow: React.FC<ProjectSlideshowProps> = ({ images, title }) =>
 
   if (images.length === 0) {
     return (
-      <div className="aspect-video bg-gradient-to-br from-gray-100 to-gray-50 rounded-2xl overflow-hidden shadow-xl mb-12 flex items-center justify-center">
+      <div className="h-48 md:h-56 bg-gradient-to-br from-gray-100 to-gray-50 rounded-2xl overflow-hidden shadow-xl mb-12 flex items-center justify-center">
         <span className="text-gray-400">No images available</span>
       </div>
     );
@@ -48,7 +49,16 @@ const ProjectSlideshow: React.FC<ProjectSlideshowProps> = ({ images, title }) =>
     <>
       {/* Main Slideshow */}
       <div className="mb-6">
-        <div className="relative aspect-video bg-gradient-to-br from-gray-100 to-gray-50 rounded-2xl overflow-hidden shadow-xl">
+        <div 
+          className="relative h-48 md:h-56 rounded-xl overflow-hidden"
+          style={{
+            backdropFilter: 'blur(15px)',
+            background: 'rgba(255, 255, 255, 0.4)',
+            border: projectId && ['frm-platform', 'food-ordering', 'safe-elderly-care'].includes(projectId) 
+              ? 'none' 
+              : '3px solid rgba(210, 210, 210, 0.8)'
+          }}
+        >
           <div className="relative w-full h-full overflow-hidden">
             <motion.div
               className="flex h-full"
@@ -64,7 +74,7 @@ const ProjectSlideshow: React.FC<ProjectSlideshowProps> = ({ images, title }) =>
                   <img
                     src={image}
                     alt={`${title} - Image ${index + 1}`}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                   />
                 </div>
               ))}

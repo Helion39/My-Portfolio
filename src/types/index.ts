@@ -4,6 +4,8 @@ export interface Project {
   category: string;
   description: string;
   image: string;
+  images?: string[]; // Optional array for multiple images
+  video?: string; // Optional video file
   period?: string;
   overview: string;
   role: string;

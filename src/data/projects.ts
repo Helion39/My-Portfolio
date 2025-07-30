@@ -7,16 +7,18 @@ export const projects: Project[] = [
     category: "Cybersecurity & Analysis",
     description: "Team-based investigation analyzing financial fraud, data leaks, and malware attacks",
     image: "/projects/Cybersecurity Audit PT. Sequre Gate One1.png",
+    images: [
+      "/projects/Cybersecurity Audit PT. Sequre Gate One1.png",
+      "/projects/Cybersecurity Audit PT. Sequre Gate One2.png"
+    ],
     period: "Oct 2024 - Dec 2024",
-    overview: "Participated in comprehensive team-based digital forensic investigations analyzing complex cybersecurity incidents including financial fraud, data breaches, and malware attacks. Applied professional forensic methodologies to reconstruct incident timelines and identify attack vectors.",
-    role: "As a forensic analyst team member, I conducted detailed technical analysis of digital evidence using industry-standard tools and methodologies. My contributions focused on network traffic analysis, file recovery operations, and user activity reconstruction to support incident response and legal proceedings.",
+    overview: "Team-based digital forensic investigations analyzing cybersecurity incidents including financial fraud, data breaches, and malware attacks using professional forensic methodologies.",
+    role: "Conducted technical analysis of digital evidence focusing on network traffic analysis, file recovery operations, and user activity reconstruction for incident response.",
     technologies: ["Wireshark", "Network Miner", "PCAP Analysis", "File Recovery Tools", "Log Analysis", "Incident Response"],
     details: [
-      "Analyzed network traffic using Wireshark to identify malicious communication patterns and data exfiltration",
-      "Performed file recovery operations to reconstruct deleted evidence and recover critical system files",
-      "Conducted comprehensive user activity tracing through system logs and registry analysis",
-      "Collaborated with team members to correlate findings and build comprehensive incident timelines",
-      "Documented forensic findings with detailed reports suitable for technical and legal review"
+      "Analyzed network traffic using Wireshark to identify malicious patterns",
+      "Performed file recovery operations and system log analysis",
+      "Collaborated on incident timeline reconstruction and forensic reporting"
     ]
   },
   {
@@ -25,16 +27,18 @@ export const projects: Project[] = [
     category: "Full-Stack Development",
     description: "PHP-MySQL web application with order tracking and product listings",
     image: "/projects/FoodOrder1.png",
+    images: [
+      "/projects/FoodOrder1.png",
+      "/projects/FoodOrder2.png"
+    ],
     period: "Aug 2024 - Sep 2024",
-    overview: "Built a comprehensive full-stack web application for food ordering with real-time order tracking and dynamic product management. This project demonstrates proficiency in both frontend user experience and backend system architecture.",
-    role: "As the full-stack developer, I architected and implemented the entire system from database design to user interface. I focused on creating a scalable backend API and an intuitive frontend that provides seamless ordering experiences for customers and efficient management tools for restaurant owners.",
+    overview: "Full-stack web application for food ordering with real-time tracking and dynamic product management, demonstrating both frontend and backend development skills.",
+    role: "Architected and implemented the complete system from database design to user interface, focusing on scalable backend API and intuitive frontend experience.",
     technologies: ["PHP", "MySQL", "JavaScript", "HTML/CSS", "AJAX", "Session Management"],
     details: [
-      "Designed and implemented a normalized MySQL database schema for efficient data management",
-      "Built RESTful API endpoints in PHP for order processing, user authentication, and product management",
-      "Created responsive frontend interfaces with dynamic product listings and real-time order updates",
-      "Implemented secure user authentication and session management for customer and admin roles",
-      "Developed real-time order tracking system with status updates and notification features"
+      "Designed normalized MySQL database and RESTful API endpoints",
+      "Created responsive frontend with dynamic listings and real-time updates",
+      "Implemented secure authentication and real-time order tracking system"
     ]
   },
   {
@@ -43,16 +47,20 @@ export const projects: Project[] = [
     category: "Cybersecurity",
     description: "Interactive platform visualizing ISO/IEC 27005 risk assessment process",
     image: "/projects/FRM1.png",
+    images: [
+      "/projects/FRM1.png",
+      "/projects/FRM2.png",
+      "/projects/FRM3.png",
+      "/projects/FRM4.png"
+    ],
     period: "Nov 2024 - Jan 2025",
-    overview: "Created an interactive cybersecurity risk assessment platform that visualizes the comprehensive 9-step ISO/IEC 27005 risk assessment process. The platform helps users systematically evaluate the security of their software or hardware systems by understanding threats, vulnerabilities, and risk controls through an intuitive web interface.",
-    role: "As the lead developer and cybersecurity analyst, I designed and implemented the complete risk assessment framework from conceptual design to interactive visualization. My focus was on translating complex cybersecurity standards into an accessible, user-friendly platform that enables effective risk management decision-making.",
+    overview: "Interactive cybersecurity risk assessment platform visualizing the 9-step ISO/IEC 27005 process for systematic security evaluation of software and hardware systems.",
+    role: "Lead developer designing and implementing the complete risk assessment framework, translating complex cybersecurity standards into user-friendly interfaces.",
     technologies: ["React", "TypeScript", "Tailwind CSS", "Interactive Visualization", "ISO/IEC 27005", "Risk Assessment Framework", "Cybersecurity Standards"],
     details: [
-      "Implemented interactive visualization of the 9-step ISO/IEC 27005 risk assessment methodology",
-      "Designed user-friendly interface for systematic evaluation of software and hardware security",
-      "Created comprehensive threat and vulnerability assessment tools with real-time analysis",
-      "Developed risk control recommendation system based on industry best practices",
-      "Built responsive web platform using modern React and TypeScript architecture"
+      "Implemented interactive visualization of ISO/IEC 27005 methodology",
+      "Created threat and vulnerability assessment tools with real-time analysis",
+      "Built responsive platform using React and TypeScript architecture"
     ]
   },
   {
@@ -61,16 +69,15 @@ export const projects: Project[] = [
     category: "3D Modeling & Animation",
     description: "Collaborative 3D animation with character modeling and environmental design",
     image: "/projects/Blend.png",
+    video: "/projects/UrbanNight.mp4",
     period: "Jun 2024 - Aug 2024",
-    overview: "Contributed to an ambitious collaborative 3D animation project as part of a 4-person creative team. The project involved creating a detailed urban environment with dynamic lighting, character animation, and environmental storytelling elements.",
-    role: "As a key team member responsible for 30% of total asset creation and animation, I focused on character modeling, movement systems, and environmental design. My contributions included both technical modeling work and creative animation sequences that brought the urban environment to life.",
+    overview: "Collaborative 3D animation project with a 4-person team creating detailed urban environments with dynamic lighting and character animation.",
+    role: "Key team member responsible for 30% of asset creation, focusing on character modeling, movement systems, and environmental design.",
     technologies: ["3D Modeling Software", "Animation Tools", "Lighting Systems", "Texture Mapping", "Team Collaboration"],
     details: [
-      "Created detailed 3D character models with optimized topology for smooth animation workflows",
-      "Developed character movement systems and animation sequences for realistic motion",
-      "Designed and modeled environmental assets including buildings, vehicles, and urban infrastructure",
-      "Implemented dynamic lighting systems to create atmospheric night-time cityscape scenes",
-      "Collaborated effectively with team members to maintain consistent artistic vision and technical standards"
+      "Created optimized 3D character models and animation sequences",
+      "Designed environmental assets including buildings and urban infrastructure",
+      "Implemented dynamic lighting systems for atmospheric night scenes"
     ]
   },
   {
@@ -80,15 +87,13 @@ export const projects: Project[] = [
     description: "Sophisticated social media platform replicating Reddit's core functionality with modern web technologies",
     image: "/projects/Banddit1.png",
     period: "Dec 2024 - Feb 2025",
-    overview: "Developed a sophisticated, full-stack social media platform that replicates Reddit's core functionality using modern web technologies. Banddit demonstrates advanced full-stack development skills through a complete community forum application featuring user authentication, content management, and real-time social interactions.",
-    role: "As the full-stack developer, I architected and implemented the entire social media platform from database design to user interface. My focus was on creating a scalable, secure application that handles complex social interactions, user authentication, and real-time content updates while maintaining optimal performance.",
+    overview: "Full-stack social media platform replicating Reddit's core functionality with modern web technologies, featuring user authentication and real-time interactions.",
+    role: "Architected and implemented the complete platform from database to UI, focusing on scalable, secure social interactions and real-time content updates.",
     technologies: ["React", "TypeScript", "Redux Toolkit", "Node.js", "Express.js", "MongoDB", "JWT Authentication", "Tailwind CSS", "Radix UI", "Framer Motion"],
     details: [
-      "Built comprehensive authentication system with JWT tokens, password hashing, and Google OAuth integration",
-      "Implemented real-time voting system and comment interactions with optimistic UI updates",
-      "Designed RESTful API with full CRUD operations for posts, comments, and user management",
-      "Created responsive design with dark theme support and mobile-first approach using Tailwind CSS",
-      "Developed advanced state management using Redux Toolkit for complex application state handling"
+      "Built authentication system with JWT tokens and Google OAuth integration",
+      "Implemented real-time voting and comment system with optimistic UI updates",
+      "Created responsive design with dark theme and Redux Toolkit state management"
     ]
   },
   {
@@ -107,6 +112,23 @@ export const projects: Project[] = [
       "Developed emergency response system with immediate alert broadcasting and caregiver coordination",
       "Created comprehensive incident management system with complete audit trails for emergency responses",
       "Designed secure healthcare data handling with compliance-focused privacy controls and JWT authentication"
+    ]
+  },
+  {
+    id: "nuri-uiux-internship",
+    title: "Nuri E-commerce UI/UX Design Project",
+    category: "UI/UX Design",
+    description: "Project-based internship designing user experiences for e-commerce platform under Smartfren and Whale Cloud Technology partnership",
+    image: "/projects/Nuri.png",
+    period: "May 2025 - Jun 2025",
+    overview: "4-week UI/UX design internship at Nuri, a joint venture e-commerce company under Smartfren and Whale Cloud Technology. Applied design principles through persona creation, user flows, wireframing, and prototyping.",
+    role: "UI/UX design intern conducting UX research and creating user-centered design solutions from research through final prototype delivery for e-commerce optimization.",
+    technologies: ["Figma", "Google Analytics", "User Research", "Wireframing", "Prototyping", "Design Thinking", "UX Research"],
+    details: [
+      "Conducted user research and created detailed user personas",
+      "Developed user flows and wireframes for e-commerce optimization",
+      "Designed high-fidelity prototypes focusing on usability and conversion",
+      "Delivered complete design thinking documentation and implementation guidelines"
     ]
   }
 ];

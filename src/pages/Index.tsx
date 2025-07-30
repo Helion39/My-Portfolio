@@ -68,7 +68,7 @@ const Index = () => {
       <ProjectCardsSection />
       <ContactSection />
       {/* Footer */}
-      <footer className="py-12 px-6 md:px-12 border-t border-gray-200" style={{backgroundColor: '#f1f3f4'}}>
+      <footer className="py-12 pb-24 md:pb-12 px-6 md:px-12 border-t border-gray-200" style={{backgroundColor: '#f1f3f4'}}>
         <div className="max-w-7xl mx-auto text-center">
           <p className="text-gray-500 text-sm">
             © 2025 Mohammad Nabil Hanif. All rights reserved.

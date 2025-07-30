@@ -60,6 +60,7 @@ const ProjectDetail = () => {
           <ProjectSlideshow 
             images={projectImages[project.id] || [project.image]}
             title={project.title}
+            projectId={project.id}
           />
         </div>
       </section>
