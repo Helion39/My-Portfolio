@@ -105,9 +105,9 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
           )}
           
           {/* Text overlay - appears on hover for desktop, always visible on mobile/tablet */}
-          <div className="absolute inset-0 opacity-100 md:opacity-0 md:hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-6 md:p-8">
+          <div className="absolute inset-0 opacity-100 md:opacity-0 md:hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-4 md:p-8">
             <div className="text-right max-w-xs">
-              <h3 className="text-lg md:text-xl lg:text-2xl font-semibold">
+              <h3 className="text-sm md:text-xl lg:text-2xl font-semibold">
                 {title}
               </h3>
             </div>

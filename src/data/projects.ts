@@ -45,7 +45,7 @@ export const projects: Project[] = [
     id: "frm-platform",
     title: "Free Risk Management (FRM) - Cybersecurity Risk Assessment Platform",
     category: "Cybersecurity",
-    description: "Interactive platform visualizing ISO/IEC 27005 risk assessment process",
+    description: "Interactive platform for ISO/IEC 27005 risk assessment",
     image: "/projects/FRM1.png",
     images: [
       "/projects/FRM1.png",
@@ -54,8 +54,8 @@ export const projects: Project[] = [
       "/projects/FRM4.png"
     ],
     period: "Nov 2024 - Jan 2025",
-    overview: "Interactive cybersecurity risk assessment platform visualizing the 9-step ISO/IEC 27005 process for systematic security evaluation of software and hardware systems.",
-    role: "Lead developer designing and implementing the complete risk assessment framework, translating complex cybersecurity standards into user-friendly interfaces.",
+    overview: "Interactive platform visualizing the 9-step ISO/IEC 27005 process for systematic cybersecurity risk assessment.",
+    role: "Lead developer implementing the complete risk assessment framework with user-friendly interfaces.",
     technologies: ["React", "TypeScript", "Tailwind CSS", "Interactive Visualization", "ISO/IEC 27005", "Risk Assessment Framework", "Cybersecurity Standards"],
     details: [
       "Implemented interactive visualization of ISO/IEC 27005 methodology",
