@@ -9,9 +9,47 @@ const HeroSection = () => {
   return (
     <section id="home" className="min-h-screen flex items-center px-6 md:px-12" style={{backgroundColor: '#f1f3f4'}}>
       <div className="max-w-7xl mx-auto w-full">
-        <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
-          {/* Left side portrait */}
-          <div className="hidden md:flex justify-center items-center">
+        {/* Mobile Layout */}
+        <div className="md:hidden flex flex-col items-center space-y-6 text-center">
+          <div className="flex justify-center">
+            <div 
+              className="p-2 rounded-xl drop-shadow-lg"
+              style={{
+                border: '2px solid rgba(210, 210, 210, 0.8)',
+                backdropFilter: 'blur(20px)',
+                background: 'rgba(255, 255, 255, 0.2)'
+              }}
+            >
+              <img
+                src={MePicPort}
+                alt="Portrait of Mohammad Nabil Hanif"
+                className="w-[120px] h-auto object-contain rounded-lg"
+                draggable={false}
+              />
+            </div>
+          </div>
+          <div className="space-y-4">
+            <div className="space-y-2">
+              <h1 className="text-3xl font-light text-gray-900 tracking-tight">
+                Mohammad Nabil Hanif
+              </h1>
+              <h2 className="text-lg text-gray-600 font-light">
+                Full-Stack Developer & Systems Analyst
+              </h2>
+              <div className="text-base text-gray-500 font-medium min-h-[24px] flex items-center justify-center">
+                <FlipWords 
+                  words={specialties} 
+                  duration={2500}
+                  className="text-gray-500 font-medium px-0"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Desktop Layout */}
+        <div className="hidden md:grid md:grid-cols-2 gap-20 items-center">
+          <div className="flex justify-center items-center">
             <div 
               className="p-4 rounded-2xl drop-shadow-xl"
               style={{

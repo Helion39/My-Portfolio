@@ -13,7 +13,6 @@ export default function CarouselDemo() {
   const slideData = projects.map(project => ({
     id: project.id,
     title: project.title,
-    description: project.description,
     src: project.image,
   }));
 

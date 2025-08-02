@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { FaLinkedin, FaGithub, FaWhatsapp, FaTelegram } from "react-icons/fa";
 import emailjs from '@emailjs/browser';
+import CustomCaptcha, { CustomCaptchaRef } from "@/components/ui/custom-captcha";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -13,6 +14,8 @@ const ContactSection = () => {
   });
   const [isLoading, setIsLoading] = useState(false);
   const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [captchaValue, setCaptchaValue] = useState<string | null>(null);
+  const captchaRef = useRef<CustomCaptchaRef>(null);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -22,8 +25,19 @@ const ContactSection = () => {
     }));
   };
 
+  const handleCaptchaChange = (value: string | null) => {
+    setCaptchaValue(value);
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Check if CAPTCHA is completed
+    if (!captchaValue) {
+      setStatus('error');
+      return;
+    }
+
     setIsLoading(true);
     setStatus('idle');
 
@@ -47,6 +61,8 @@ const ContactSection = () => {
 
       setStatus('success');
       setFormData({ name: "", email: "", message: "" });
+      setCaptchaValue(null);
+      captchaRef.current?.reset();
     } catch (error) {
       console.error('EmailJS Error:', error);
       setStatus('error');
@@ -129,10 +145,19 @@ const ContactSection = () => {
                 }}
               />
             </div>
+            
+            {/* Custom reCAPTCHA */}
+            <CustomCaptcha
+              ref={captchaRef}
+              sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY || "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"}
+              onChange={handleCaptchaChange}
+              theme="light"
+            />
+            
             <div className="text-center">
               <Button
                 type="submit"
-                disabled={isLoading}
+                disabled={isLoading || !captchaValue}
                 className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isLoading ? 'Sending...' : 'Send Message'}
@@ -146,7 +171,7 @@ const ContactSection = () => {
 
               {status === 'error' && (
                 <p className="text-red-600 text-sm mt-3">
-                  Failed to send message. Please try again or use the social media links below.
+                  {!captchaValue ? 'Please complete the CAPTCHA verification.' : 'Failed to send message. Please try again or use the social media links below.'}
                 </p>
               )}
 

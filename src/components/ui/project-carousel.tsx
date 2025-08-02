@@ -6,7 +6,6 @@ import { useNavigate } from "react-router-dom";
 interface SlideData {
   id: string;
   title: string;
-  description: string;
   src: string;
 }
 
@@ -54,7 +53,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
     yRef.current = 0;
   };
 
-  const { src, title, description } = slide;
+  const { src, title } = slide;
 
   return (
     <div className="[perspective:1200px] [transform-style:preserve-3d]">
@@ -108,12 +107,9 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
           {/* Text overlay - appears on hover for desktop, always visible on mobile/tablet */}
           <div className="absolute inset-0 opacity-100 md:opacity-0 md:hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-6 md:p-8">
             <div className="text-right max-w-xs">
-              <h3 className="text-lg md:text-xl lg:text-2xl font-semibold mb-2">
+              <h3 className="text-lg md:text-xl lg:text-2xl font-semibold">
                 {title}
               </h3>
-              <p className="text-sm md:text-base text-gray-200 leading-relaxed">
-                {description}
-              </p>
             </div>
           </div>
         </div>
