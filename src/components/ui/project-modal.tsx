@@ -159,9 +159,11 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
             </div>
           </div>
 
-          {/* Key Features */}
+          {/* Key Features/Contributions */}
           <div>
-            <h3 className="text-lg font-medium text-gray-900 mb-3">Key Features</h3>
+            <h3 className="text-lg font-medium text-gray-900 mb-3">
+              {project.id === "digital-forensics" ? "Key Contributions" : "Key Features"}
+            </h3>
             <div className="grid md:grid-cols-2 gap-3">
               {project.details.map((detail, index) => (
                 <div key={index} className="flex items-start gap-2">

@@ -23,7 +23,7 @@ const ProjectCardsSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-4">My Projects</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Explore my complete portfolio of technical projects and creative work
+            Discover my technical and creative projects, from current builds to completed work.
           </p>
         </div>
         

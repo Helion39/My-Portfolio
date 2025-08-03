@@ -7,7 +7,7 @@ const EducationSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-6">Education</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Academic excellence with focus on Information Technology and cybersecurity
+            Academic excellence in Information Technology and Cybersecurity
           </p>
         </div>
 

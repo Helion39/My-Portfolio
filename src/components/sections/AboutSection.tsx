@@ -18,25 +18,25 @@ const AboutSection = () => {
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-gray-400 rounded-full mt-2 flex-shrink-0"></div>
                 <p className="text-gray-600 leading-relaxed">
-                  <strong className="text-gray-800">Analytical Thinking</strong> - Breaking down complex systems and identifying potential risks through systematic evaluation and forensic analysis.
+                  <strong className="text-gray-800">Analytical Thinking</strong> - Skilled in evaluating complex systems, identifying inconsistencies, and making data-driven decisions through structured problem-solving approaches.
                 </p>
               </div>
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-gray-400 rounded-full mt-2 flex-shrink-0"></div>
                 <p className="text-gray-600 leading-relaxed">
-                  <strong className="text-gray-800">Team Collaboration</strong> - Working effectively in diverse teams, from 4-person 3D animation projects to cross-functional development initiatives.
+                  <strong className="text-gray-800">Team Collaboration</strong> - Collaborates effectively in diverse teams by contributing ideas, actively listening, and adapting to dynamic group settings.
                 </p>
               </div>
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-gray-400 rounded-full mt-2 flex-shrink-0"></div>
                 <p className="text-gray-600 leading-relaxed">
-                  <strong className="text-gray-800">Leadership</strong> - Demonstrated through Vice Head role at PUNICO, managing 25-30 members, and leading social impact projects like BRIGHT.
+                  <strong className="text-gray-800">Leadership & Initiative</strong> - Takes ownership in team environments—planning activities, guiding peers, and driving collective goals with accountability.
                 </p>
               </div>
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-gray-400 rounded-full mt-2 flex-shrink-0"></div>
                 <p className="text-gray-600 leading-relaxed">
-                  <strong className="text-gray-800">Adaptability</strong> - Transitioning seamlessly between cybersecurity testing, UI/UX design, game testing, and full-stack development projects.
+                  <strong className="text-gray-800">Adaptability & Growth Mindset</strong> - Quick to grasp new tools and concepts across domains. Embraces unfamiliar challenges with flexibility and a commitment to continuous learning.
                 </p>
               </div>
             </div>

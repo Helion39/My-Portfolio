@@ -6,15 +6,15 @@ export const education: Education[] = [
     degree: "Bachelor of Informatics",
     institution: "President University",
     period: "Sep 2023 - Dec 2026",
-    achievements: ["Jababeka Scholarship Rank 2"],
-    description: "Partial scholarship awarded based on outstanding high school academic performance. Focusing on cybersecurity, system analysis, and web development."
+    achievements: ["Jababeka Scholarship (Rank 2)"],
+    description: "Partial scholarship awarded for outstanding academic performance in high school. Focused on cybersecurity, system analysis, and web development."
   },
   {
     id: "kada-bootcamp",
-    degree: "Korea-ASEAN Digital Academy (KADA) Bootcamp",
-    institution: "ASEAN-Korea Cooperation Fund & KOMINDIGI",
-    period: "Jun 2025 - Aug 2025",
-    achievements: ["Currently Enrolled"],
-    description: "10-week intensive program powered by the ASEAN-Korea Cooperation Fund and the Ministry of Communication and Digital Affairs of Indonesia."
+    degree: "Korean-ASEAN Digital Academy (KADA) Bootcamp",
+    institution: "ASEAN-Korea Cooperation Fund & KOMINFO Indonesia",
+    period: "Aug 2025 - Oct 2025",
+    achievements: ["Full-stack Development", "DevOps Practices", "AI Ethics", "Data Security"],
+    description: "Participated in a 10-week government-funded digital upskilling program focusing on AI ethics, data security, web & backend development, cloud services, data analysis, CI/CD, and UI/UX design. Collaborated in a cross-functional team to deliver a capstone project applying full-stack development and DevOps practices."
   }
 ];

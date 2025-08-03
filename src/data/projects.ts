@@ -12,13 +12,13 @@ export const projects: Project[] = [
       "/projects/Cybersecurity Audit PT. Sequre Gate One2.png"
     ],
     period: "Oct 2024 - Dec 2024",
-    overview: "Team-based digital forensic investigations analyzing cybersecurity incidents including financial fraud, data breaches, and malware attacks using professional forensic methodologies.",
-    role: "Conducted technical analysis of digital evidence focusing on network traffic analysis, file recovery operations, and user activity reconstruction for incident response.",
+    overview: "Collaborative investigations of cybersecurity incidents, including financial fraud, data breaches, and malware attacks, using industry-standard forensic methodologies.",
+    role: "Digital Forensics Investigator focusing on network analysis, incident response, and evidence collection.",
     technologies: ["Wireshark", "Network Miner", "PCAP Analysis", "File Recovery Tools", "Log Analysis", "Incident Response"],
     details: [
-      "Analyzed network traffic using Wireshark to identify malicious patterns",
-      "Performed file recovery operations and system log analysis",
-      "Collaborated on incident timeline reconstruction and forensic reporting"
+      "Identified malicious patterns by analyzing network traffic with Wireshark",
+      "Performed file recovery and system log analysis to trace incident sources",
+      "Reconstructed attack timelines and co-authored forensic reports"
     ]
   },
   {
@@ -43,7 +43,7 @@ export const projects: Project[] = [
   },
   {
     id: "frm-platform",
-    title: "Free Risk Management - Cybersecurity Risk Assessment Platform",
+    title: "Free Risk Manager (FRM) – Cybersecurity Risk Assessment Platform",
     category: "Cybersecurity",
     description: "Interactive platform for ISO/IEC 27005 risk assessment",
     image: "/projects/FRM1.png",
@@ -54,13 +54,13 @@ export const projects: Project[] = [
       "/projects/FRM4.png"
     ],
     period: "Nov 2024 - Jan 2025",
-    overview: "Interactive platform visualizing the 9-step ISO/IEC 27005 process for systematic cybersecurity risk assessment.",
+    overview: "Interactive web-based platform that illustrates the 9-step ISO/IEC 27005 process, helping users understand and conduct structured cybersecurity risk assessments.",
     role: "Lead developer implementing the complete risk assessment framework with user-friendly interfaces.",
     technologies: ["React", "TypeScript", "Tailwind CSS", "Interactive Visualization", "ISO/IEC 27005", "Risk Assessment Framework", "Cybersecurity Standards"],
     details: [
-      "Implemented interactive visualization of ISO/IEC 27005 methodology",
-      "Created threat and vulnerability assessment tools with real-time analysis",
-      "Built responsive platform using React and TypeScript architecture"
+      "Visualized ISO/IEC 27005 methodology through interactive components",
+      "Developed tools for real-time threat and vulnerability assessment",
+      "Built a responsive platform with React and TypeScript"
     ]
   },
   {
@@ -103,15 +103,14 @@ export const projects: Project[] = [
     description: "Healthcare monitoring platform enhancing elderly care through intelligent monitoring and emergency response",
     image: "/projects/SAFE1.png",
     period: "Jan 2025 - Mar 2025",
-    overview: "Developed a comprehensive healthcare monitoring platform designed to enhance elderly care in nursing homes through intelligent monitoring and emergency response coordination. The SAFE (Smart Assisted Fall Emergency) system combines human caregiving with AI-powered monitoring to improve elderly care outcomes and patient safety.",
-    role: "As the full-stack developer and healthcare systems architect, I designed and implemented the complete monitoring platform from database architecture to real-time emergency response systems. My focus was on creating a reliable, secure healthcare application that prioritizes patient safety and caregiver efficiency.",
+    overview: "Smart healthcare platform to support elderly care in nursing homes, combining AI-powered monitoring with human caregiving for better safety and response.",
+    role: "Full-stack developer and systems architect focusing on healthcare monitoring and emergency response systems.",
     technologies: ["React", "TypeScript", "Node.js", "Express.js", "MongoDB", "Socket.io", "Tailwind CSS", "JWT Authentication", "Recharts", "Full-Stack Development", "AI"],
     details: [
-      "Built role-based dashboards for Admins, Caregivers, and Family Members with healthcare-specific workflows",
-      "Implemented real-time vital signs monitoring with interactive charts for blood pressure and heart rate tracking",
-      "Developed emergency response system with immediate alert broadcasting and caregiver coordination",
-      "Created comprehensive incident management system with complete audit trails for emergency responses",
-      "Designed secure healthcare data handling with compliance-focused privacy controls and JWT authentication"
+      "Designed role-based dashboards for Admins, Caregivers, and Family Members",
+      "Enabled real-time tracking of vitals with interactive blood pressure and heart rate charts",
+      "Built emergency alert system with caregiver coordination tools",
+      "Integrated incident management with full audit tracking"
     ]
   },
   {
@@ -121,14 +120,14 @@ export const projects: Project[] = [
     description: "Project-based internship designing user experiences for e-commerce platform under Smartfren and Whale Cloud Technology partnership",
     image: "/projects/Nuri.png",
     period: "May 2025 - Jun 2025",
-    overview: "4-week UI/UX design internship at Nuri, a joint venture e-commerce company under Smartfren and Whale Cloud Technology. Applied design principles through persona creation, user flows, wireframing, and prototyping.",
-    role: "UI/UX design intern conducting UX research and creating user-centered design solutions from research through final prototype delivery for e-commerce optimization.",
+    overview: "4-week internship at Nuri, an e-commerce venture by Smartfren and Whale Cloud. Applied end-to-end UI/UX design process from research to prototyping.",
+    role: "UI/UX Design Intern focusing on e-commerce user experience optimization.",
     technologies: ["Figma", "Google Analytics", "User Research", "Wireframing", "Prototyping", "Design Thinking", "UX Research"],
     details: [
-      "Conducted user research and created detailed user personas",
-      "Developed user flows and wireframes for e-commerce optimization",
-      "Designed high-fidelity prototypes focusing on usability and conversion",
-      "Delivered complete design thinking documentation and implementation guidelines"
+      "Conducted user research and created detailed personas",
+      "Designed user flows and wireframes to optimize shopping experience",
+      "Built high-fidelity prototypes focused on usability and conversion",
+      "Delivered complete documentation and design guidelines"
     ]
   }
 ];
