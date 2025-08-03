@@ -43,7 +43,7 @@ export const projects: Project[] = [
   },
   {
     id: "frm-platform",
-    title: "Free Risk Manager (FRM) – Cybersecurity Risk Assessment Platform",
+    title: "Free Risk Manager – Cybersecurity Risk Assessment Platform",
     category: "Cybersecurity",
     description: "Interactive platform for ISO/IEC 27005 risk assessment",
     image: "/projects/FRM1.png",
@@ -91,7 +91,7 @@ export const projects: Project[] = [
     role: "Architected and implemented the complete platform from database to UI, focusing on scalable, secure social interactions and real-time content updates.",
     technologies: ["React", "TypeScript", "Redux Toolkit", "Node.js", "Express.js", "MongoDB", "JWT Authentication", "Tailwind CSS", "Radix UI", "Framer Motion"],
     details: [
-      "Built authentication system with JWT tokens and Google OAuth integration",
+      "Built an authentication system with JWT tokens and Google OAuth integration",
       "Implemented real-time voting and comment system with optimistic UI updates",
       "Created responsive design with dark theme and Redux Toolkit state management"
     ]

@@ -30,13 +30,13 @@ const AboutSection = () => {
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-gray-400 rounded-full mt-2 flex-shrink-0"></div>
                 <p className="text-gray-600 leading-relaxed">
-                  <strong className="text-gray-800">Leadership & Initiative</strong> - Takes ownership in team environments—planning activities, guiding peers, and driving collective goals with accountability.
+                  <strong className="text-gray-800">Leadership & Initiative</strong> - Actively contributes in team settings by planning activities, supporting peers, and ensuring shared goals are met responsibly.
                 </p>
               </div>
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-gray-400 rounded-full mt-2 flex-shrink-0"></div>
                 <p className="text-gray-600 leading-relaxed">
-                  <strong className="text-gray-800">Adaptability & Growth Mindset</strong> - Quick to grasp new tools and concepts across domains. Embraces unfamiliar challenges with flexibility and a commitment to continuous learning.
+                  <strong className="text-gray-800">Adaptability & Growth Mindset</strong> - Eager to learn new tools and ideas, and adapts quickly when faced with unfamiliar challenges.
                 </p>
               </div>
             </div>

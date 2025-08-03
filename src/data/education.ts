@@ -15,6 +15,7 @@ export const education: Education[] = [
     institution: "ASEAN-Korea Cooperation Fund & KOMINFO Indonesia",
     period: "Aug 2025 - Oct 2025",
     achievements: ["Full-stack Development", "DevOps Practices", "AI Ethics", "Data Security"],
-    description: "Participated in a 10-week government-funded digital upskilling program focusing on AI ethics, data security, web & backend development, cloud services, data analysis, CI/CD, and UI/UX design. Collaborated in a cross-functional team to deliver a capstone project applying full-stack development and DevOps practices."
+    description: "Participated in a 10-week government-funded digital upskilling program focusing on AI ethics, data security, web & backend development, cloud services, data analysis, CI/CD, and UI/UX design.",
+    additionalInfo: "Collaborated in a cross-functional team to deliver a capstone project applying full-stack development and DevOps practices."
   }
 ];

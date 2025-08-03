@@ -1,11 +1,15 @@
 import React from "react";
-import { FaReact, FaJava, FaPhp, FaDatabase, FaAndroid, FaGitAlt, FaHtml5, FaCss3Alt, FaJs, FaUsers, FaCamera, FaBluetooth, FaNetworkWired, FaFileAlt, FaSearch, FaShieldAlt, FaCube, FaLightbulb, FaPalette, FaUserFriends } from "react-icons/fa";
+import { FaReact, FaJava, FaPhp, FaDatabase, FaAndroid, FaGitAlt, FaHtml5, FaCss3Alt, FaJs, FaUsers, FaCamera, FaBluetooth, FaNetworkWired, FaFileAlt, FaSearch, FaShieldAlt, FaCube, FaLightbulb, FaPalette, FaUserFriends, FaGamepad } from "react-icons/fa";
 import { SiFirebase, SiWireshark, SiFigma, SiMysql, SiGoogleanalytics, SiBlender } from "react-icons/si";
 import { MdSecurity, MdAnalytics, MdBrush, MdGroup, MdSettings, MdStorage, MdApi } from "react-icons/md";
 import { HiOutlineDocumentText, HiOutlineUserGroup, HiOutlineLightBulb, HiOutlineCamera, HiOutlineWifi } from "react-icons/hi";
 
 export const getIconForTech = (tech: string): JSX.Element => {
   const iconMap: { [key: string]: JSX.Element } = {
+    "Website Tester": <FaShieldAlt className="text-[#6B7280]" />,
+    "Game Tester": <FaGamepad className="text-[#6B7280]" />,
+    "UI/UX Designer – Project-Based Internship": <MdBrush className="text-[#6B7280]" />,
+    "Vice Head – Seiyuu Circle": <FaUsers className="text-[#6B7280]" />,
     "Figma": <SiFigma className="text-[#F24E1E]" />,
     "PHP": <FaPhp className="text-[#777BB4]" />,
     "MySQL": <SiMysql className="text-[#4479A1]" />,
