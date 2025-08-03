@@ -7,7 +7,7 @@ const AboutSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-6">About Me</h2>
           <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto mb-8">
-            I am an Information Technology scholar at President University passionate about building digital experiences that are functional, intuitive, and secure. My work is driven by a belief that the best technology feels both effortless and safe.
+            I am an Information Technology enthusiast currently studying Informatics at President University, passionate about building digital experiences that are functional, intuitive, and secure. I believe that the best technology feels both effortless and safe.
           </p>
         </div>
 

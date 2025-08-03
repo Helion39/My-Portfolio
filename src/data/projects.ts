@@ -43,7 +43,7 @@ export const projects: Project[] = [
   },
   {
     id: "frm-platform",
-    title: "Free Risk Management (FRM) - Cybersecurity Risk Assessment Platform",
+    title: "Free Risk Management - Cybersecurity Risk Assessment Platform",
     category: "Cybersecurity",
     description: "Interactive platform for ISO/IEC 27005 risk assessment",
     image: "/projects/FRM1.png",
@@ -116,7 +116,7 @@ export const projects: Project[] = [
   },
   {
     id: "nuri-uiux-internship",
-    title: "Nuri E-commerce UI/UX Design Project",
+    title: "NURI UI/UX Design Project",
     category: "UI/UX Design",
     description: "Project-based internship designing user experiences for e-commerce platform under Smartfren and Whale Cloud Technology partnership",
     image: "/projects/Nuri.png",
